@@ -22,7 +22,7 @@
             </a>
           </li>
           <li class="nav__item">
-            <a class="nav__link" href="#">
+            <a class="nav__link">
               Подбор программы
             </a>
           </li>
@@ -42,37 +42,53 @@
     <form class="form" action="#" method="get">
       <div class="form__grid">
         <div class="form__col">
-          <div class="label label__grid">
-            <div class="label__item">
-              <label for="user-name-id">ИМЯ:*</label>
-              <input id="user-name-id" type="text" name="user-name" required>
-            </div>
-            <div class="label__item">
-              <label for="user-weight-id">Вес (кг):*</label>
-              <input id="user-weight-id" type="number" name="user-weight" required>
-            </div>
-            <div class="label__item">
-              <label for="user-age-id">Возраст (лет):</label>
-              <input id="user-age-id" type="number" name="user-age">
-            </div>
-          </div>
+
+          <ul class="label-main label-main__grid">
+            <li class="label-main__item">
+              <label class="label-main__caption">
+                ИМЯ:*
+                <input class="label-main__input" type="text" name="user-name" required>
+              </label>
+            </li>
+            <li class="label-main__item">
+              <label class="label-main__caption">
+                Вес (кг):*
+                <input class="label-main__input" type="number" name="user-weight" required>
+              </label>
+            </li>
+            <li class="label-main__item">
+              <label class="label-main__caption">
+                Возраст (лет):
+                <input class="label-main__input" type="number" name="user-age">
+              </label>
+            </li>
+          </ul>
+
         </div>
 
         <div class="form__col">
-          <div class="radio radio__grid">
-            <div class="radio__item">
-              <input id="radio-1-id" type="radio" name="radio-1" checked>
-              <label for="radio-1-id">Похудение</label>
-            </div>
-            <div class="radio__item">
-              <input id="radio-2-id" type="radio" name="radio-2">
-              <label for="radio-2-id">Набор массы</label>
-            </div>
-            <div class="radio__item">
-              <input id="radio-3-id" type="radio" name="radio-3">
-              <label for="radio-3-id">Не знаю (Нужен ваш совет)</label>
-            </div>
-          </div>
+
+          <ul class="radio-main radio-main__grid">
+            <li class="radio-main__item">
+              <label class="radio-main__caption">
+                <input class="radio-main__input" type="radio" name="radio-weight-selection" checked>
+                Похудение
+              </label>
+            </li>
+            <li class="radio-main__item">
+              <label class="radio-main__caption">
+                <input class="radio-main__input" type="radio" name="radio-weight-selection">
+                Набор массы
+              </label>
+            </li>
+            <li class="radio-main__item">
+              <label class="radio-main__caption">
+                <input class="radio-main__input" type="radio" name="radio-weight-selection">
+                Не знаю (Нужен ваш совет)
+              </label>
+            </li>
+          </ul>
+
         </div>
       </div>
 
@@ -82,18 +98,22 @@
 
       <div class="form__grid">
         <div class="form__col">
-          <div class="label label__grid">
-            <div class="label__item">
-              <label for="user-mail-id">E-mail:*</label>
-              <input id="user-mail-id" type="email" name="user-mail" value="kuklachev@gmail.com" required> <!-- Иконка псевдокласс-->
+          <div class="label-main label-main__grid">
+            <div class="label-main__item">
+              <label class="label-main__caption">
+                E-mail:*
+                <input class="label-main__input" type="email" name="user-mail" value="kuklachev@gmail.com" required> <!-- Иконка псевдокласс-->
+              </label>
             </div>
           </div>
         </div>
         <div class="form__col">
-          <div class="label label__grid">
-            <div class="label__item">
-              <label for="user-number-id">Телефон:*</label>
-              <input id="user-number-id" type="number" name="user-number" value="8 (960) 900-60-90" required> <!-- Иконка псевдокласс-->
+          <div class="label-main label-main__grid">
+            <div class="label-main__item">
+              <label class="label-main__caption">
+                Телефон:*
+                <input class="label-main__input" type="number" name="user-number" value="8 (960) 900-60-90" required> <!-- Иконка псевдокласс-->
+              </label>
             </div>
           </div>
         </div>
@@ -113,24 +133,32 @@
 
       <div class="form__grid">
         <div class="form__col">
-          <div class="checkbox checkbox__grid">
-            <div class="checkbox__item">
-              <input id="checkbox-1-id" type="checkbox" name="user-checkbox-1" checked>
-              <label for="checkbox-1-id">сахарозаменитель</label>
-            </div>
-            <div class="checkbox__item">
-              <input id="checkbox-2-id" type="checkbox" name="user-checkbox-2" checked>
-              <label for="checkbox-2-id">питьевая вода</label>
-            </div>
-            <div class="checkbox__item">
-              <input id="checkbox-3-id" type="checkbox" name="user-checkbox-3" checked>
-              <label for="checkbox-3-id">молоко</label>
-            </div>
-            <div class="checkbox__item">
-              <input id="checkbox-4-id" type="checkbox" name="user-checkbox-4" checked>
-              <label for="checkbox-4-id">витамины</label>
-            </div>
-          </div>
+          <ul class="checkbox-main checkbox-main__grid">
+            <li class="checkbox-main__item">
+              <label class="checkbox-main__caption">
+                <input class="checkbox-main__input" type="checkbox" name="checkbox-additionally" checked>
+                сахарозаменитель
+              </label>
+            </li>
+            <li class="checkbox-main__item">
+              <label class="checkbox-main__caption">
+                <input class="checkbox-main__input" type="checkbox" name="checkbox-additionally" checked>
+                питьевая вода
+              </label>
+            </li>
+            <li class="checkbox-main__item">
+              <label class="checkbox-main__caption">
+                <input class="checkbox-main__input" type="checkbox" name="checkbox-additionally" checked>
+                молоко
+              </label>
+            </li>
+            <li class="checkbox-main__item">
+              <label class="checkbox-main__caption">
+                витамины
+                <input class="checkbox-main__input" type="checkbox" name="checkbox-additionally" checked>
+              </label>
+            </li>
+          </ul>
         </div>
 
         <div class="form__col">
