@@ -1,0 +1,49 @@
+.cart {
+  padding: 30px 20px 18px 20px;
+  background: $color-extra;
+  &__title {
+    margin: 0px 0px 0px 91px ;
+    font-family: $font-main-regular;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 37px;
+    letter-spacing: 0em;
+    text-align: left;
+    text-transform: uppercase;
+  }
+  &__paragrafe {
+    padding: 0px 0px 23px 0px;
+    font-family: Arial;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: left;
+    border: 1px solid #D9D9D9;
+    color: $color-achromatic-2;
+  }
+  &__link {
+    margin: 19px 0px 0px 0px;
+    font-family: $font-main-regular;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: left;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: $black;
+  }
+}
+
+.cart--image-1 {
+  background: url(../img/cat_back_1.png) no-repeat top 22px left 21px;
+  background-size: 50px 53px;
+}
+.cart--image-2 {
+  background: url(../img/cat_back_2.png) no-repeat top 24px left 13px;
+  background-size: 67px 50px;
+}

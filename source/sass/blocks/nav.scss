@@ -1,0 +1,24 @@
+.nav {
+  &__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  &__item {
+    padding: 22px 0px;
+    border-bottom: #E6E6E6;
+  }
+  &__link {
+    display: inline-block;
+    width: 100%;
+    font-family: $font-main-medium;
+    color: $black;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: center;
+    text-decoration: none;
+  }
+}

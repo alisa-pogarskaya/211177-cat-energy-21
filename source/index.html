@@ -3,12 +3,14 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   <body>
 
     <header class="header header__grid-main">
-      <img class="header__col-main logotype" src="https://via.placeholder.com/150x150">
-      <img class="header__col-main logotype-text" src="https://via.placeholder.com/150x150">
+      <img class="header__col-main logotype" src="../img/logo_mobile.svg">
+      <img class="header__col-main logotype-text" src="../img/footer_logo_2.svg">
       <nav class="nav">
         <ul class="nav__list">
           <li class="nav__item">
@@ -30,7 +32,7 @@
       </nav>
     </header>
 
-    <section class="main-screen">
+    <section class="main-screen main-screen__grid">
       <h1 class="main-screen__title">
         Функциональное питание для котов
       </h1>
@@ -38,13 +40,13 @@
         Занялся собой? Займись котом!
       </span>
       <a class="main-screen__button" href="#">подобрать программу</a>
-      <img class="header__logotext" src="https://via.placeholder.com/150x150">
+      <img class="main-screen__image" src="../img/index_can_mobile_1.png">
     </section>
 
     <section class="catalogs">
       <ul class="catalogs-list">
         <li class="catalogs-item">
-          <div class="cart"> <!-- для наставника: иконка будет выводиться через background-->
+          <div class="cart cart--image-1">
             <h3 class="cart__title">
               похудение
             </h3>
@@ -55,7 +57,7 @@
           </div>
         </li>
         <li class="catalogs-item">
-          <div class="cart"> <!-- для наставника: иконка будет выводиться через background-->
+          <div class="cart cart--image-2">
             <h3 class="cart__title">
               Набор массы
             </h3>
@@ -69,7 +71,7 @@
     </section>
 
     <section class="principle-operation">
-      <h2 lass="principle-operation__title">
+      <h2 class="principle-operation__title">
         Как это работает
       </h2>
       <ul class="principle-operation__list">
@@ -106,24 +108,24 @@
           <div class="example__grid">
             <div class="example__col">
               <div class="example__outline">
-                <span>5 КГ</span>
-                <span>снижение веса</span>
+                <span class="example__max-title">5 КГ</span>
+                <span class="example__mini-title">снижение веса</span>
               </div>
             </div>
             <div class="example__col">
               <div class="example__outline">
-                <span>60 ДНЕЙ</span>
-                <span>затрачено времени</span>
+                <span class="example__max-title">60 ДНЕЙ</span>
+                <span class="example__mini-title">затрачено времени</span>
               </div>
             </div>
             <div class="example__col">
-              <span>Затраты на питание:</span>
-              <span>15 000 РУБ. </span>
+              <span class="example__sub-title">Затраты на питание:</span>
+              <span class="example__sub-title">15 000 РУБ. </span>
             </div>
           </div>
         </div>
         <div class="example__col-main">
-          <img class="header__logotext" src="https://via.placeholder.com/150x150">
+          <img class="slider-range__image" src="../img/before_mobile_1.png">
           <div class="slider-range">
             <span class="slider-range__text">было</span>
             <input class="slider-range__input" type="radio">
@@ -155,30 +157,30 @@
     <footer class="footer">
       <div class="footer__grid-main">
         <div class="footer__col-main">
-          <img class="header__logo-text" src="https://via.placeholder.com/150x150">
+          <img class="header__logo-text" src="../img/footer_logo_2.svg">
         </div>
         <div class="footer__col-main">
           <ul class="footer__list">
             <li class="footer__item">
               <a class="footer__link" href="#">
-                <img class="header__logo-text" src="https://via.placeholder.com/32x32">
+                <img class="header__logo-text" src="../img/icon_vkontakte.svg">
               </a>
             </li>
             <li class="footer__item">
               <a class="footer__link" href="#">
-                <img class="header__logo-text" src="https://via.placeholder.com/32x32">
+                <img class="header__logo-text" src="../img/icon_instagram.svg">
               </a>
             </li>
             <li class="footer__item">
               <a class="footer__link" href="#">
-                <img class="header__logo-text" src="https://via.placeholder.com/32x32">
+                <img class="header__logo-text" src="../img/icon_facebook.svg">
               </a>
             </li>
           </ul>
         </div>
         <div class="footer__col-main">
-          <span>HTML Academy</span>
-          <img class="header__logo-text" src="https://via.placeholder.com/150x150">
+          <span class="footer__copyright">HTML Academy</span>
+          <img class="header__logo-text" wight="27px" height="34px" src="../img/htmlacademy.svg">
         </div>
       </div>
     </footer>
