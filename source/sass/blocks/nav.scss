@@ -4,10 +4,12 @@
     padding: 0;
     list-style: none;
   }
+
   &__item {
-    padding: 22px 0px;
-    border-bottom: #E6E6E6;
+    padding: 22px 0;
+    border-bottom: #e6e6e6;
   }
+
   &__link {
     display: inline-block;
     width: 100%;
@@ -17,7 +19,7 @@
     font-style: normal;
     font-weight: 500;
     line-height: 20px;
-    letter-spacing: 0em;
+    letter-spacing: 0;
     text-align: center;
     text-decoration: none;
   }
