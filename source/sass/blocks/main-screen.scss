@@ -1,52 +1,48 @@
 .main-screen {
-  min-height: auto;
   padding: 27px 0 0 0;
   background: #ffffff url("../img/header_bg_mobile.jpg") no-repeat top;
+  font-style: normal;
+  font-weight: 400;
+}
 
-  &__title {
-    margin: 0 0 25px 0;
-    font-family: $font-main-regular;
-    font-size: 36px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 36px;
-    letter-spacing: 0;
-    text-align: center;
-    color: $white;
-  }
+.main-screen__title {
+  margin: 0 0 25px 0;
+  font-family: $font-main-regular;
+  font-size: 36px;
+  line-height: 36px;
+  letter-spacing: 0;
+  text-align: center;
+  color: $white;
+}
 
-  &__subtitle {
-    display: inline-block;
-    margin: 0 0 37px 0;
-    width: 100%;
-    font-family: $font-main-regular;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 14px;
-    letter-spacing: 0;
-    text-align: center;
-    color: $white;
-  }
+.main-screen__subtitle {
+  display: inline-block;
+  margin: 0 0 37px 0;
+  width: 100%;
+  font-family: $font-main-regular;
+  font-size: 14px;
+  line-height: 14px;
+  letter-spacing: 0;
+  text-align: center;
+  color: $white;
+}
 
-  &__image {
-    margin: 0 0 3px 0;
-  }
+.main-screen__image {
+  margin: 0 0 3px 0;
+}
 
-  &__button {
-    display: inline-block;
-    width: 100%;
-    padding: 11px 0;
-    background: $color-main;
-    font-family: $font-main-regular;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 18px;
-    letter-spacing: 0;
-    text-align: center;
-    color: $white;
-    text-decoration: none;
-    text-transform: uppercase;
-  }
+.main-screen__button {
+  display: inline-block;
+  width: 100%;
+  padding: 11px 0;
+  background: $color-main;
+  font-family: $font-main-regular;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0;
+  text-align: center;
+  vertical-align: middle;
+  color: $white;
+  text-decoration: none;
+  text-transform: uppercase;
 }

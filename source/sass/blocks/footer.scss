@@ -1,24 +1,24 @@
 .footer {
   padding: 39px 20px 22px 20px;
+}
 
-  &__logo-text {
-    margin: 0 0 32px 0;
-    border-bottom: 1px solid #d9d9d9;
-  }
+.footer__logo-text {
+  margin: 0 0 32px 0;
+  border-bottom: 1px solid $color-achromatic-extra-1;
+}
 
-  &__list {
-    padding: 20px 0 21px 0;
-    border-bottom: 1px solid #d9d9d9;
-    list-style: none;
-  }
+.footer__list {
+  padding: 20px 0 21px 0;
+  border-bottom: 1px solid $color-achromatic-extra-1;
+  list-style: none;
+}
 
-  &__copyright {
-    font-family: $font-extra-regular;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 18px;
-    letter-spacing: 0;
-    text-align: left;
-  }
+.footer__copyright {
+  font-family: $font-extra-regular;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0;
+  text-align: left;
 }

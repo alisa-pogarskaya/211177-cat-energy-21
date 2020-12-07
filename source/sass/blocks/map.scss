@@ -1,28 +1,26 @@
 .map {
-  &__info {
-    padding: 28px 19px 26px 19px;
-  }
+  padding: 28px 19px 26px 19px;
+}
 
-  &__title {
-    margin: 0;
-    font-family: $font-main-regular;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 18px;
-    letter-spacing: 0;
-    text-align: left;
-    text-transform: uppercase;
-  }
+.map__title {
+  margin: 0;
+  font-family: $font-main-regular;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0;
+  text-align: left;
+  text-transform: uppercase;
+}
 
-  &__address {
-    margin: 0;
-    font-family: $font-extra-regular;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 20px;
-    letter-spacing: 0;
-    text-align: left;
-  }
+.map__address {
+  margin: 0;
+  font-family: $font-extra-regular;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0;
+  text-align: left;
 }

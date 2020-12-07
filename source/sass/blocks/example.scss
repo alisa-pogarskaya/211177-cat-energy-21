@@ -1,72 +1,64 @@
 .example {
   padding: 27px 20px 25px 20px;
   background: #eaeaea;
+  font-style: normal;
+  font-weight: 400;
+}
 
-  &__title {
-    margin: 0 0 33px 0;
-    font-family: $font-main-regular;
-    font-size: 36px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 40px;
-    letter-spacing: 0;
-    text-align: left;
-    color: $black;
-  }
+.example__title {
+  margin: 0 0 33px 0;
+  font-family: $font-main-regular;
+  font-size: 36px;
+  line-height: 40px;
+  letter-spacing: 0;
+  text-align: left;
+  color: $black;
+}
 
-  &__paragrafe {
-    margin: 0 0 26px 0;
-    font-family: $font-extra-regular;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 18px;
-    letter-spacing: 0;
-    text-align: left;
-    color: $color-achromatic-2;
-  }
+.example__paragrafe {
+  margin: 0 0 26px 0;
+  font-family: $font-extra-regular;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0;
+  text-align: left;
+  color: $color-achromatic-2;
+}
 
-  &__outline {
-    margin: 0 0 19px 0;
-    border: 1px solid $color-achromatic-4;
-    border-radius: 3px;
-  }
+.example__outline {
+  margin: 0 0 19px 0;
+  border: 1px solid $color-achromatic-4;
+  border-radius: 3px;
+}
 
-  &__max-title {
-    font-family: $font-main-regular;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 24px;
-    letter-spacing: 0;
-    text-align: center;
-    text-transform: uppercase;
-    color: $black;
-  }
+.example__max-title {
+  font-family: $font-main-regular;
+  font-size: 24px;
+  line-height: 24px;
+  letter-spacing: 0;
+  text-align: center;
+  text-transform: uppercase;
+  color: $black;
+}
 
-  &__mini-title {
-    font-family: $font-extra-regular;
-    font-size: 12px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 12px;
-    letter-spacing: 0;
-    text-align: center;
-    color: $color-achromatic-2;
-  }
+.example__mini-title {
+  font-family: $font-extra-regular;
+  font-size: 12px;
+  line-height: 12px;
+  letter-spacing: 0;
+  text-align: center;
+  color: $color-achromatic-2;
+}
 
-  &__sub-title {
-    display: inline-block;
-    margin: 0 0 42px 0;
-    width: 100%;
-    font-family: $font-main-regular;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 20px;
-    letter-spacing: 0;
-    text-align: center;
-    text-transform: uppercase;
-    color: $black;
-  }
+.example__sub-title {
+  display: inline-block;
+  margin: 0 0 42px 0;
+  width: 100%;
+  font-family: $font-main-regular;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0;
+  text-align: center;
+  text-transform: uppercase;
+  color: $black;
 }
