@@ -3,12 +3,14 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи</title>
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   <body>
 
     <header class="header header__grid-main">
-      <img class="header__col-main logotype" src="https://via.placeholder.com/150x150">
-      <img class="header__col-main logotype-text" src="https://via.placeholder.com/150x150">
+      <img class="header__col-main logotype" src="img/logo_mobile.svg">
+      <img class="header__col-main logotype-text" src="img/footer_logo_2.svg">
       <nav class="nav">
         <ul class="nav__list">
           <li class="nav__item">
@@ -22,7 +24,7 @@
             </a>
           </li>
           <li class="nav__item">
-            <a class="nav__link">
+            <a class="nav__link" href="#">
               Подбор программы
             </a>
           </li>
@@ -41,33 +43,37 @@
 
     <form class="form" action="#" method="get">
       <div class="form__grid">
-        <div class="form__col">
 
+        <div class="form__col">
           <ul class="label-main label-main__grid">
             <li class="label-main__item">
               <label class="label-main__caption">
-                ИМЯ:*
+                <span class="label-main__caption-title">
+                  ИМЯ:*
+                </span>
                 <input class="label-main__input" type="text" name="user-name" required>
               </label>
             </li>
             <li class="label-main__item">
               <label class="label-main__caption">
-                Вес (кг):*
+                <span class="label-main__caption-title">
+                  Вес (кг):*
+                </span>
                 <input class="label-main__input" type="number" name="user-weight" required>
               </label>
             </li>
             <li class="label-main__item">
               <label class="label-main__caption">
-                Возраст (лет):
+                <span class="label-main__caption-title">
+                  Возраст (лет):
+                </span>
                 <input class="label-main__input" type="number" name="user-age">
               </label>
             </li>
           </ul>
-
         </div>
 
         <div class="form__col">
-
           <ul class="radio-main radio-main__grid">
             <li class="radio-main__item">
               <label class="radio-main__caption">
@@ -88,8 +94,8 @@
               </label>
             </li>
           </ul>
-
         </div>
+
       </div>
 
       <h2 class="form__title">
@@ -97,26 +103,29 @@
       </h2>
 
       <div class="form__grid">
+
         <div class="form__col">
           <div class="label-main label-main__grid">
             <div class="label-main__item">
               <label class="label-main__caption">
                 E-mail:*
-                <input class="label-main__input" type="email" name="user-mail" value="kuklachev@gmail.com" required> <!-- Иконка псевдокласс-->
+                <input class="label-main__input" type="email" name="user-mail" placeholder="kuklachev@gmail.com" required>
               </label>
             </div>
           </div>
         </div>
+
         <div class="form__col">
           <div class="label-main label-main__grid">
             <div class="label-main__item">
               <label class="label-main__caption">
                 Телефон:*
-                <input class="label-main__input" type="number" name="user-number" value="8 (960) 900-60-90" required> <!-- Иконка псевдокласс-->
+                <input class="label-main__input" type="tel" name="user-number" placeholder="8(960)900-60-90" required>
               </label>
             </div>
           </div>
         </div>
+
       </div>
 
       <h2 class="form__title">
@@ -124,7 +133,7 @@
       </h2>
 
       <div class="textarea textarea__item">
-        <textarea name="user-textarea" value="Расскажите обо всех повАдках кота"> <!-- Иконка псевдокласс-->
+        <textarea class="textarea__input" name="user-textarea" placeholder="Расскажите обо всех повадках кота"></textarea>
       </div>
 
       <h2 class="form__title">
@@ -132,6 +141,7 @@
       </h2>
 
       <div class="form__grid">
+
         <div class="form__col">
           <ul class="checkbox-main checkbox-main__grid">
             <li class="checkbox-main__item">
@@ -154,8 +164,8 @@
             </li>
             <li class="checkbox-main__item">
               <label class="checkbox-main__caption">
-                витамины
                 <input class="checkbox-main__input" type="checkbox" name="checkbox-additionally" checked>
+                витамины
               </label>
             </li>
           </ul>
@@ -194,30 +204,30 @@
     <footer class="footer">
       <div class="footer__grid-main">
         <div class="footer__col-main">
-          <img class="header__logo-text" src="https://via.placeholder.com/150x150">
+          <img class="header__logo-text" src="img/footer_logo_2.svg">
         </div>
         <div class="footer__col-main">
           <ul class="footer__list">
             <li class="footer__item">
               <a class="footer__link" href="#">
-                <img class="header__logo-text" src="https://via.placeholder.com/32x32">
+                <img class="header__logo-text" src="img/icon_vkontakte.svg">
               </a>
             </li>
             <li class="footer__item">
               <a class="footer__link" href="#">
-                <img class="header__logo-text" src="https://via.placeholder.com/32x32">
+                <img class="header__logo-text" src="img/icon_instagram.svg">
               </a>
             </li>
             <li class="footer__item">
               <a class="footer__link" href="#">
-                <img class="header__logo-text" src="https://via.placeholder.com/32x32">
+                <img class="header__logo-text" src="img/icon_facebook.svg">
               </a>
             </li>
           </ul>
         </div>
         <div class="footer__col-main">
-          <span>HTML Academy</span>
-          <img class="header__logo-text" src="https://via.placeholder.com/150x150">
+          <span class="footer__copyright">HTML Academy</span>
+          <img class="header__logo-text" wight="27px" height="34px" src="img/htmlacademy.svg">
         </div>
       </div>
     </footer>

@@ -1,0 +1,49 @@
+.label-main {
+  padding: 0 19px 27px 19px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.label-main__item {
+  margin: 0 0 13px 0;
+  list-style: none;
+
+  &:last-child {
+    margin: 0;
+  }
+}
+
+.label-main__caption {
+  width: 100%;
+  display: flex;
+  font-family: $font-main-regular;
+  font-size: 16px;
+  line-height: 18px;
+  letter-spacing: 0;
+  text-align: left;
+}
+
+.label-main__caption-title {
+  padding: 0 13px 0 0;
+  text-transform: uppercase;
+}
+
+.label-main__input {
+  width: 100%;
+  padding: 13px 15px 13px 15px;
+  border: 1px solid $color-achromatic-extra-2;
+  box-sizing: border-box;
+
+  &::placeholder {
+    padding: 13px 12px 23px 15px;
+    font-family: $font-main-regular;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0;
+    text-align: left;
+    text-transform: uppercase;
+    color: $color-achromatic-2;
+  }
+}

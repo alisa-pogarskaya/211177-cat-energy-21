@@ -1,0 +1,26 @@
+.checkbox-main {
+  margin: 0 0 26px 0;
+  padding: 20px 20px 22px 20px;
+  border-top: 1px solid $color-achromatic-extra-1;
+  border-bottom: 1px solid $color-achromatic-extra-1;
+}
+
+.checkbox-main__item {
+  margin: 0 0 19px 0;
+  list-style: none;
+
+  &:last-child {
+    margin: 0;
+  }
+}
+
+.checkbox-main__caption {
+  font-family: $font-main-regular;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0em;
+  text-align: left;
+  text-transform: uppercase;
+}
