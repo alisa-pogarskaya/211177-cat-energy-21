@@ -21,11 +21,11 @@
   line-height: 18px;
   letter-spacing: 0;
   text-align: left;
-}
 
-.label-main__caption-title {
-  padding: 0 13px 0 0;
-  text-transform: uppercase;
+  & span {
+    padding: 0 13px 0 0;
+    text-transform: uppercase;
+  }
 }
 
 .label-main__input {
