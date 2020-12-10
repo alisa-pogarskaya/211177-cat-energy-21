@@ -1,0 +1,36 @@
+.submit {
+  display: inline-block;
+  width: 100%;
+  margin: 0 0 21px 0;
+  padding: 10px 0 10px 0;
+  background: $color-main;
+  font-family: $font-main-regular;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0;
+  text-align: center;
+  vertical-align: middle;
+  color: $white;
+  text-decoration: none;
+  text-transform: uppercase;
+  border: none;
+}
+
+.submit__grid {
+  padding: 0 20px 0 20px;
+}
+
+.submit__caption {
+  display: inline-block;
+  width: 100%;
+  margin: 0 0 32px 0;
+  font-family: $font-extra-regular;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0;
+  text-align: center;
+}

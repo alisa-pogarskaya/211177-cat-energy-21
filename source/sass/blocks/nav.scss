@@ -4,9 +4,14 @@
   list-style: none;
 }
 
+.nav__list {
+  list-style: none;
+  padding: 0;
+}
+
 .nav__item {
   padding: 22px 0;
-  border-bottom: #e6e6e6;
+  border-bottom: 1px solid $color-achromatic-extra-3;
 }
 
 .nav__link {
