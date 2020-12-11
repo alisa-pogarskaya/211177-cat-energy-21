@@ -1,0 +1,67 @@
+.additional-goods {
+  padding: 0 20px 35px 20px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.additional-goods__title {
+  margin: 0 0 35px 0;
+  font-family: $font-main-regular;
+  font-size: 24px;
+  line-height: 24px;
+  letter-spacing: 0;
+  text-align: left;
+}
+
+.additional-goods__list-grid {
+  list-style: none;
+  margin: 0 0 39px 0;
+  padding: 0;
+}
+
+.additional-goods__list-col {
+  border-top: 1px solid $color-achromatic-4;
+
+  &:last-child {
+    border-bottom: 1px solid $color-achromatic-4;
+  }
+}
+
+.additional-goods__list {
+  list-style: none;
+  margin: 0;
+  padding: 6px 0 12px 0;
+}
+
+.additional-goods__item {
+  padding: 7px 0 7px 0;
+  font-family: $font-extra-regular;
+  font-size: 14px;
+  line-height: 14px;
+  letter-spacing: 0;
+  text-align: left;
+
+  &--title {
+    font-family: $font-main-regular;
+    font-size: 16px;
+    line-height: 16px;
+    text-transform: uppercase;
+  }
+}
+
+.additional-goods__button {
+  display: inline-block;
+  width: 100%;
+  padding: 10px 0 10px 0;
+  background: $color-main;
+  font-family: $font-main-regular;
+  font-size: 16px;
+  line-height: 18px;
+  letter-spacing: 0;
+  text-align: center;
+  vertical-align: middle;
+  color: $white;
+  text-decoration: none;
+  text-transform: uppercase;
+  border: none;
+}
