@@ -1,8 +1,32 @@
 .example {
-  padding: 27px 20px 25px 20px;
+  width: auto;
+  padding: 27px 20px 31px 20px;
   background: #eaeaea;
   font-style: normal;
   font-weight: 400;
+}
+
+@media (min-width: $tablet) {
+  .example {
+    padding: 43px 20px 31px 20px;
+    border-top: 1px solid $color-achromatic-extra-3;
+    background: $white;
+  }
+}
+
+@media (min-width: $desktop) {
+  .example {
+    padding: 43px 110px 31px 110px;
+    border-top: none;
+    background: #eaeaea;
+  }
+}
+
+@media (min-width: $desktop) {
+  .example__grid-main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 .example__title {
@@ -15,6 +39,19 @@
   color: $black;
 }
 
+@media (min-width: $tablet) {
+  .example__title {
+    font-size: 60px;
+    line-height: 60px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .example__title {
+    margin: -170px 0 136px 0;
+  }
+}
+
 .example__paragrafe {
   margin: 0 0 26px 0;
   font-family: $font-extra-regular;
@@ -25,13 +62,104 @@
   color: $color-achromatic-2;
 }
 
+@media (min-width: $tablet) {
+  .example__paragrafe {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+.example__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 34px; // никак не получается убрать отступ справа
+}
+
+@media (min-width: $tablet) {
+  .example__grid {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 42px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .example__grid {
+    grid-template-columns: 1fr 1fr; // тоже не понимаю что не так делаю
+    grid-gap: 0;
+  }
+}
+
+.example__col {
+  &--1 {
+    grid-column: 1;
+  }
+
+  &--2 {
+    grid-column: 2;
+  }
+
+  &--3 {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: $tablet) {
+  .example__col {
+    &--1 {
+      grid-column: 1;
+    }
+
+    &--2 {
+      grid-column: 2;
+    }
+
+    &--3 {
+      grid-column: 3;
+      margin: 0 auto;
+    }
+  }
+}
+
+@media (min-width: $desktop) {
+  .example__col {
+    &--1 {
+      grid-column: 1;
+    }
+
+    &--2 {
+      grid-column: 2;
+    }
+
+    &--3 {
+      grid-column-start: 1;
+      grid-column-end: 6;
+      margin: inherit;
+    }
+  }
+}
+
 .example__outline {
+  display: flex;
+  width: 100%;
+  position: relative;
   margin: 0 0 19px 0;
+  padding: 14px 0 17px 0;
   border: 1px solid $color-achromatic-4;
   border-radius: 3px;
 }
 
+@media (min-width: $tablet) {
+  .example__outline {
+    margin: 0 0 59px 0;
+    padding: 15px 0 20px 0;
+  }
+}
+
 .example__max-title {
+  display: inline-block;
+  width: 100%;
   font-family: $font-main-regular;
   font-size: 24px;
   line-height: 24px;
@@ -41,7 +169,23 @@
   color: $black;
 }
 
+@media (min-width: $tablet) {
+  .example__max-title {
+    font-size: 30px;
+    line-height: 37px;
+  }
+}
+
 .example__mini-title {
+  position: absolute;
+  display: block;
+  top: 47px;
+  left: 50%;
+  width: 58px;
+  height: 24px;
+  margin-left: -44px;
+  padding: 0 15px;
+  background: $color-achromatic-extra-4;
   font-family: $font-extra-regular;
   font-size: 12px;
   line-height: 12px;
@@ -50,10 +194,19 @@
   color: $color-achromatic-2;
 }
 
+@media (min-width: $tablet) {
+  .example__mini-title {
+    top: 63px;
+    width: auto;
+    margin-left: -48px;
+    background: $white;
+  }
+}
+
 .example__sub-title {
   display: inline-block;
   margin: 0 0 42px 0;
-  width: 100%;
+  width: auto;
   font-family: $font-main-regular;
   font-size: 14px;
   line-height: 20px;
@@ -61,4 +214,25 @@
   text-align: center;
   text-transform: uppercase;
   color: $black;
+}
+
+@media (min-width: $tablet) {
+  .example__sub-title {
+    display: block;
+    margin: 0 0 9px 0;
+    text-align: right;
+    font-size: 20px;
+    line-height: 20px;
+
+    &:last-child {
+      margin: 0;
+    }
+  }
+}
+
+@media (min-width: $desktop) {
+  .example__sub-title {
+    display: 100%;
+    text-align: left;
+  }
 }
