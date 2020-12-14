@@ -1,5 +1,30 @@
+.map {
+  position: relative;
+}
+
 .map__info {
   padding: 28px 19px 22px 19px;
+}
+
+
+@media (min-width: $tablet) {
+  .map__info {
+    position: absolute;
+    top: 95px;
+    left: 110px;
+    padding: 66px 89px 51px 76px;
+    background-color: $white;
+  }
+}
+
+.map__grid {
+  display: flex;
+}
+
+@media (min-width: $tablet) {
+  .map__grid {
+    justify-content: space-between;
+  }
 }
 
 .map__title {
@@ -14,6 +39,12 @@
   text-transform: uppercase;
 }
 
+@media (min-width: $tablet) {
+  .map__title {
+    width: 171px;
+  }
+}
+
 .map__address {
   margin: 0;
   font-family: $font-extra-regular;
@@ -23,4 +54,12 @@
   line-height: 20px;
   letter-spacing: 0;
   text-align: left;
+  color: $color-achromatic-2;
+}
+
+@media (min-width: $tablet) {
+  .map__address {
+    width: 159px;
+    text-align: right;
+  }
 }

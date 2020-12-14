@@ -1,5 +1,17 @@
 .principle-operation {
-  padding: 0 0 42px 0;
+  padding: 0 20px 42px 20px;
+}
+
+@media (min-width: $tablet) {
+  .principle-operation {
+    padding: 0 30px 47px 30px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .principle-operation {
+    padding: 0 110px 205px 110px;
+  }
 }
 
 .principle-operation__title {
@@ -14,6 +26,42 @@
   color: $black;
 }
 
+@media (min-width: $tablet) {
+  .principle-operation__title {
+    margin: 0 0 72px 0;
+    font-size: 60px;
+    line-height: 60px;
+  }
+}
+
+.principle-operation__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@media (min-width: $tablet) {
+  .principle-operation__list {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 77px;
+    list-style-type: none;
+    counter-reset: num;
+  }
+}
+
+@media (min-width: $desktop) {
+  .principle-operation__list {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 77px;
+    list-style-type: none;
+    counter-reset: num;
+  }
+}
+
 .principle-operation__item {
   min-height: 60px;
   margin: 0 0 20px 0;
@@ -25,6 +73,7 @@
   line-height: 18px;
   letter-spacing: 0;
   text-align: left;
+  color: $color-achromatic-2;
 
   &--image1 {
     background: url("../img/special_image_1.svg") no-repeat left top;
@@ -47,8 +96,50 @@
   }
 }
 
-.principle-operation__list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+@media (min-width: $tablet) {
+  .principle-operation__item {
+    position: relative;
+    z-index: 1;
+    max-width: 201px;
+    margin: 0;
+    padding: 111px 0 30px 0;
+    font-size: 16px;
+    line-height: 24px;
+
+    &--image1 {
+      background: url("../img/special_image_tablet_1.svg") no-repeat left top;
+    }
+
+    &--image2 {
+      background: url("../img/special_image_tablet_2.svg") no-repeat left top;
+    }
+
+    &--image3 {
+      background: url("../img/special_image_tablet_3.svg") no-repeat left top;
+    }
+
+    &--image4 {
+      background: url("../img/special_image_tablet_4.svg") no-repeat left top;
+    }
+
+    &::before {
+      content: counter(num);
+      counter-increment: num;
+      z-index: -1;
+      display: inline-block;
+      position: absolute;
+      top: -40px;
+      right: 90px;
+      width: 1px;
+      height: 1px;
+      font-family: $font-main-regular;
+      font-size: 280px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 280px;
+      letter-spacing: 0;
+      text-align: right;
+      color: $color-extra;
+    }
+  }
 }
