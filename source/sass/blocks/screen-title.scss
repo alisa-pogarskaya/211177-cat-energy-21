@@ -4,6 +4,18 @@
   font-weight: 400;
 }
 
+@media (min-width: $tablet) {
+  .screen-title {
+    padding: 64px 30px 39px 30px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .screen-title {
+    padding: 64px 110px 39px 110px;
+  }
+}
+
 .screen-title__h1 {
   margin: 0 0 37px 0;
   font-family: $font-main-regular;
@@ -13,10 +25,35 @@
   text-align: left;
 }
 
+@media (min-width: $tablet) {
+  .screen-title__h1 {
+    margin: 0 0 54px 0;
+    font-size: 60px;
+    line-height: 60px;
+  }
+}
+
 .screen-title__subtitle {
   font-family: $font-main-regular;
   font-size: 14px;
   line-height: 18px;
   letter-spacing: 0;
   text-align: left;
+}
+
+@media (min-width: $tablet) {
+  .screen-title__subtitle {
+    display: inline-block;
+    max-width: 323px;
+    margin: 0 0 0 40px;
+    font-size: 20px;
+    line-height: 30px;
+    text-transform: uppercase;
+  }
+}
+
+@media (min-width: $desktop) {
+  .screen-title__subtitle {
+    margin: 0;
+  }
 }

@@ -4,12 +4,48 @@
   font-weight: 400;
 }
 
+@media (min-width: $tablet) {
+  .label-main {
+    padding: 0 0 27px 0;
+  }
+}
+
+@media (min-width: $desktop) {
+  .label-main {
+    margin: 0;
+    padding: 0 0 69px 0;
+  }
+}
+
+@media (min-width: $tablet) {
+  .label-main__container {
+    margin: 0 0 38px 0;
+  }
+}
+
+@media (min-width: $desktop) {
+  .label-main__container {
+    margin: 0;
+  }
+}
+
 .label-main__item {
   margin: 0 0 13px 0;
   list-style: none;
 
   &:last-child {
     margin: 0;
+  }
+}
+
+@media (min-width: $tablet) {
+  .label-main__item {
+    margin: 0 0 20px 0;
+    list-style: none;
+
+    &:last-child {
+      margin: 0;
+    }
   }
 }
 
@@ -25,6 +61,13 @@
   & span {
     padding: 0 13px 0 0;
     text-transform: uppercase;
+  }
+}
+
+@media (min-width: $tablet) {
+  .label-main__caption {
+    font-size: 20px;
+    line-height: 30px;
   }
 }
 

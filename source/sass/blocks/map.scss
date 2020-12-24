@@ -2,12 +2,28 @@
   position: relative;
 }
 
-.map__info {
-  padding: 28px 19px 22px 19px;
+.map__grid-main {
+  display: flex;
+  flex-direction: column;
 }
 
+.map__background {
+  order: 2;
+}
+
+.map__info {
+  order: 1;
+  padding: 28px 19px 22px 19px;
+  background-color: $color-extra;
+}
 
 @media (min-width: $tablet) {
+  .map__info {
+    padding: 28px 72px 22px 71px;
+  }
+}
+
+@media (min-width: $desktop) {
   .map__info {
     position: absolute;
     top: 95px;
@@ -42,6 +58,8 @@
 @media (min-width: $tablet) {
   .map__title {
     width: 171px;
+    font-size: 20px;
+    line-height: 22px;
   }
 }
 

@@ -7,41 +7,32 @@
 
 @media (min-width: $tablet) {
   .header {
-    width: auto;
     padding: 24px 30px 0 30px;
   }
 }
 
 @media (min-width: $desktop) {
   .header {
-    position: absolute;
-    z-index: 1;
-    top: 0;
-    width: auto;
     padding: 53px 120px 0 120px;
   }
 }
 
 .header__grid-main {
-  display: grid;
-  grid-template-columns: auto;
-  grid-template-rows: auto auto;
+  display: flex;
+  flex-direction: column;
 }
 
 @media (min-width: $tablet) {
   .header__grid-main {
-    display: grid;
-    grid-template-columns: 174px 1fr;
-    grid-template-rows: auto auto;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
   }
 }
 
 @media (min-width: $desktop) {
   .header__grid-main {
-    display: grid;
-    grid-template-columns: 202px 1fr;
-    grid-gap: 540px; // не знаю как здесь грамотно адаптировать, если не выставлять значение блок не растягивется на всю ширину, нужна подсказка.
-    width: auto;
+    display: flex;
   }
 }
 
@@ -54,7 +45,8 @@
 
 @media (min-width: $tablet) {
   .header__grid-logotype {
-    margin: 0 95px 0 0;
+    margin: 0;
+    justify-content: flex-start;
   }
 }
 // END HEADER

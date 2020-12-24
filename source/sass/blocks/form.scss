@@ -2,6 +2,31 @@
   padding: 27px 0 0 0;
 }
 
+.form__grid {
+  padding: 0;
+}
+
+@media (min-width: $tablet) {
+  .form__grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 0 80px;
+    padding: 0 71px 0 71px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .form__grid {
+    grid-template-columns: 1fr;
+    grid-gap: 0 80px;
+    padding: 0 110px 0 110px;
+
+    &--two-collumn {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+}
+
 .form__title {
   margin: 0;
   padding: 0 19px 27px 19px;
@@ -12,4 +37,18 @@
   line-height: 26px;
   letter-spacing: 0;
   text-align: left;
+}
+
+@media (min-width: $tablet) {
+  .form__title {
+    padding: 0 69px 76px 69px;
+    font-size: 36px;
+    line-height: 36px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .form__title {
+    padding: 0 110px 76px 110px;
+  }
 }
