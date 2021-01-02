@@ -17,7 +17,7 @@
 
 @media (min-width: $tablet) {
   .cart {
-    padding: 77px 53px 53px 53px;
+    padding: 77px 53px 58px 53px;
 
     &--image-1 {
       background: $color-achromatic-6 url("../img/cat_back_1.png") no-repeat center right 62px;
@@ -25,7 +25,7 @@
     }
 
     &--image-2 {
-      background: $color-achromatic-6 url("../img/cat_back_2.png") no-repeat center right 28px;
+      background: $color-achromatic-6 url("../img/cat_back_2.png") no-repeat top 95px right 28px;
       background-size: 268px 200px;
     }
   }
@@ -33,7 +33,7 @@
 
 @media (min-width: $desktop) {
   .cart {
-    padding: 77px 53px 53px 53px;
+    padding: 77px 52px 62px 52px;
     background: $color-achromatic-6;
     font-style: normal;
     font-weight: 400;
@@ -51,7 +51,7 @@
 }
 
 .cart__title {
-  margin: 0 0 29px 91px;
+  margin: 0 0 29px 72px;
   font-family: $font-main-regular;
   font-size: 24px;
   line-height: 37px;
@@ -92,6 +92,12 @@
     max-width: 377px;
     padding: 0 0 48px 0;
     border-bottom: none;
+    font-size: 16px;
+    line-height: 24px;
+
+    &--castom-width {
+      width: 342px;
+    }
   }
 }
 
@@ -99,12 +105,16 @@
   .cart__paragrafe {
     max-width: 100%;
     padding: 0 0 23px 0;
+
+    &--castom-width {
+      width: 100%;
+    }
   }
 }
 
 .cart__link {
   display: inline-block;
-  margin: 19px 0 0 0;
+  margin: 17px 0 0 0;
   font-family: $font-main-regular;
   font-size: 16px;
   line-height: 16px;
@@ -125,6 +135,7 @@
 
 @media (min-width: $tablet) {
   .cart__link {
+    margin: 0;
     max-width: 377px;
     padding: 0;
     font-size: 20px;
@@ -132,11 +143,9 @@
     font-weight: 400;
     line-height: 30px;
     border-bottom: none;
-  }
-}
 
-@media (min-width: $desktop) {
-  .cart__link {
-    margin: 0;
+    &::after {
+      margin: 0 0 0 24px;
+    }
   }
 }

@@ -1,6 +1,6 @@
 .example {
   width: auto;
-  padding: 27px 20px 31px 20px;
+  padding: 27px 20px 35px 20px;
   background: #eaeaea;
   font-style: normal;
   font-weight: 400;
@@ -8,15 +8,27 @@
 
 @media (min-width: $tablet) {
   .example {
-    padding: 43px 20px 31px 20px;
+    position: relative;
+    padding: 43px 30px 75px 30px;
     border-top: 1px solid $color-achromatic-extra-3;
-    background: $white;
+    background: inherit;
+
+    &::after {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 462px;
+      background-color: $color-achromatic-extra-4;
+    }
   }
 }
 
 @media (min-width: $desktop) {
   .example {
-    padding: 43px 110px 31px 110px;
+    padding: 43px 110px 75px 110px;
     border-top: none;
     background: #eaeaea;
   }
@@ -25,7 +37,8 @@
 @media (min-width: $desktop) {
   .example__grid-main {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 440px 1fr;
+    grid-gap: 0 134px;
   }
 }
 
@@ -41,6 +54,7 @@
 
 @media (min-width: $tablet) {
   .example__title {
+    margin: 0 0 63px 0;
     font-size: 60px;
     line-height: 60px;
   }
@@ -48,12 +62,12 @@
 
 @media (min-width: $desktop) {
   .example__title {
-    margin: -170px 0 136px 0;
+    margin: -178px 0 146px 0;
   }
 }
 
 .example__paragrafe {
-  margin: 0 0 26px 0;
+  margin: 0 5px 26px 0;
   font-family: $font-extra-regular;
   font-size: 14px;
   line-height: 18px;
@@ -64,28 +78,34 @@
 
 @media (min-width: $tablet) {
   .example__paragrafe {
+    margin: 0 10px 53px 0;
     font-size: 16px;
     line-height: 24px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .example__paragrafe {
+    margin: 0 0 68px 0;
   }
 }
 
 .example__grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-gap: 34px; // никак не получается убрать отступ справа
+  grid-gap: 12px 31px;
 }
 
 @media (min-width: $tablet) {
   .example__grid {
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 162px 162px 1fr;
     grid-gap: 42px;
   }
 }
 
 @media (min-width: $desktop) {
   .example__grid {
-    grid-template-columns: 1fr 1fr; // тоже не понимаю что не так делаю
-    grid-gap: 0;
+    grid-gap: 58px 42px;
   }
 }
 
@@ -100,7 +120,7 @@
 
   &--3 {
     grid-column-start: 1;
-    grid-column-end: 4;
+    grid-column-end: 3;
     margin: 0 auto;
   }
 }
@@ -117,7 +137,7 @@
 
     &--3 {
       grid-column: 3;
-      margin: 0 auto;
+      margin: 0;
     }
   }
 }
@@ -134,7 +154,7 @@
 
     &--3 {
       grid-column-start: 1;
-      grid-column-end: 6;
+      grid-column-end: 3;
       margin: inherit;
     }
   }
@@ -154,6 +174,12 @@
   .example__outline {
     margin: 0 0 59px 0;
     padding: 15px 0 20px 0;
+  }
+}
+
+@media (min-width: $desktop) {
+  .example__outline {
+    margin: 0;
   }
 }
 
@@ -183,7 +209,6 @@
   left: 50%;
   width: 58px;
   height: 24px;
-  margin-left: -44px;
   padding: 0 15px;
   background: $color-achromatic-extra-4;
   font-family: $font-extra-regular;
@@ -192,14 +217,39 @@
   letter-spacing: 0;
   text-align: center;
   color: $color-achromatic-2;
+
+  &--1 {
+    margin-left: -44px;
+  }
+
+  &--2 {
+    margin-left: -44px;
+  }
 }
 
 @media (min-width: $tablet) {
   .example__mini-title {
     top: 63px;
-    width: auto;
-    margin-left: -48px;
     background: $white;
+    padding: 0 9px;
+    font-size: 14px;
+    line-height: 14px;
+
+    &--1 {
+      width: 100px;
+      margin-left: -58px;
+    }
+
+    &--2 {
+      width: 127px;
+      margin-left: -72px;
+    }
+  }
+}
+
+@media (min-width: $tablet) {
+  .example__mini-title {
+    background: $color-achromatic-extra-4;
   }
 }
 
@@ -219,7 +269,7 @@
 @media (min-width: $tablet) {
   .example__sub-title {
     display: block;
-    margin: 0 0 9px 0;
+    margin: 13px 0 9px 0;
     text-align: right;
     font-size: 20px;
     line-height: 20px;
@@ -232,7 +282,8 @@
 
 @media (min-width: $desktop) {
   .example__sub-title {
-    display: 100%;
+    display: inline-block;
     text-align: left;
+    margin: 0 60px 0 0;
   }
 }

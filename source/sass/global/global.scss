@@ -8,11 +8,17 @@ body {
   margin: 0;
 }
 
+$mobile: 320px;
 $tablet: 768px;
 $desktop: 1200px;
-$mobile: 767px;
 
-@media (min-width: $desktop) {
+@media (min-width: $mobile) {
+  br {
+    display: none;
+  }
+}
+
+@media (min-width: $tablet) {
   br {
     display: none;
   }

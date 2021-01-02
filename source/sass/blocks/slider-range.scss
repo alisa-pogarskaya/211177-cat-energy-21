@@ -19,7 +19,31 @@
   text-transform: uppercase;
 }
 
+@media (min-width: $tablet) {
+  .slider-range__text {
+    font-size: 20px;
+    border-bottom: 1px dotted rgba($color: #000000, $alpha: 0.24);
+  }
+}
+
 .slider-range__image {
-  margin: 0 0 23px 0;
-  width: 100%;
+  display: block;
+  margin: 0 auto 30px auto;
+  width: 279px;
+  height: 232px;
+}
+
+@media (min-width: $tablet) {
+  .slider-range__image {
+    width: 708px;
+    height: 528px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .slider-range__image {
+    width: 500px; /* пометка себе, заменить значения, значения временные */
+    height: 500px; /* пометка себе, заменить значения, значения временные */
+    margin: -224px 0 48px 0; /* пометка себе, заменить значения, значения временные */
+  }
 }
