@@ -5,12 +5,12 @@
   font-weight: 400;
 
   &--image-1 {
-    background: $color-achromatic-6 url("../img/cat_back_1.png") no-repeat top 22px left 21px;
+    background: url("../img/cat_slim.svg") no-repeat top 20px left 22px, url("../img/ellipse_green.svg") no-repeat top 23px left 22px, $color-achromatic-6;
     background-size: 50px 53px;
   }
 
   &--image-2 {
-    background: $color-achromatic-6 url("../img/cat_back_2.png") no-repeat top 24px left 13px;
+    background: url("../img/cat_pro.svg") no-repeat top 24px left 13px, url("../img/ellipse_green.svg") no-repeat top 25px left 14px, $color-achromatic-6;
     background-size: 67px 50px;
   }
 }
@@ -20,13 +20,11 @@
     padding: 77px 53px 58px 53px;
 
     &--image-1 {
-      background: $color-achromatic-6 url("../img/cat_back_1.png") no-repeat center right 62px;
-      background-size: 200px 211px;
+      background: url("../img/cat_slim.svg") no-repeat top 82px right 91px/140px 192px, url("../img/ellipse_green.svg") no-repeat top 92px right 62px/200px 200px, $color-achromatic-6;
     }
 
     &--image-2 {
-      background: $color-achromatic-6 url("../img/cat_back_2.png") no-repeat top 95px right 28px;
-      background-size: 268px 200px;
+      background: url("../img/cat_pro.svg") no-repeat top 134px right 28px/268px 112px, url("../img/ellipse_green.svg") no-repeat top 91px right 61px/200px 200px, $color-achromatic-6;
     }
   }
 }
@@ -39,19 +37,19 @@
     font-weight: 400;
 
     &--image-1 {
-      background: $color-achromatic-6 url("../img/cat_back_1.png") no-repeat top 41px left 52px;
+      background: url("../img/cat_slim.svg") no-repeat top 37px left 52px, url("../img/ellipse_green.svg") no-repeat top 44px left 52px, $color-achromatic-6;
       background-size: 100px 106px;
     }
 
     &--image-2 {
-      background: $color-achromatic-6 url("../img/cat_back_2.png") no-repeat top 47px left 33px;
+      background: url("../img/cat_pro.svg") no-repeat top 47px left 33px, url("../img/ellipse_green.svg") no-repeat top 47px left 33px, $color-achromatic-6;
       background-size: 134px 100px;
     }
   }
 }
 
 .cart__title {
-  margin: 0 0 29px 72px;
+  margin: 0 0 30px 71px;
   font-family: $font-main-regular;
   font-size: 24px;
   line-height: 37px;
@@ -63,7 +61,7 @@
 
 @media (min-width: $tablet) {
   .cart__title {
-    margin: 0 0 24px 0;
+    margin: 0 0 26px 0;
     font-size: 36px;
     line-height: 36px;
   }
@@ -71,7 +69,7 @@
 
 @media (min-width: $desktop) {
   .cart__title {
-    margin: 0 0 73px 164px;
+    margin: 0 0 73px 162px;
   }
 }
 
@@ -90,13 +88,17 @@
 @media (min-width: $tablet) {
   .cart__paragrafe {
     max-width: 377px;
-    padding: 0 0 48px 0;
+    padding: 0 0 51px 0;
     border-bottom: none;
     font-size: 16px;
     line-height: 24px;
 
     &--castom-width {
-      width: 342px;
+      width: 381px;
+    }
+
+    &--castom-width-2 {
+      width: 340px;
     }
   }
 }
@@ -104,10 +106,14 @@
 @media (min-width: $desktop) {
   .cart__paragrafe {
     max-width: 100%;
-    padding: 0 0 23px 0;
+    padding: 0 0 26px 0;
 
     &--castom-width {
       width: 100%;
+    }
+
+    &--castom-width-2 {
+      width: 450px;
     }
   }
 }
@@ -129,7 +135,7 @@
     display: inline-block;
     margin: 0 0 0 15px;
     width: 32px;
-    height: 10px;
+    height: 11px;
   }
 }
 
@@ -145,7 +151,7 @@
     border-bottom: none;
 
     &::after {
-      margin: 0 0 0 24px;
+      margin: 0 0 0 25px;
     }
   }
 }

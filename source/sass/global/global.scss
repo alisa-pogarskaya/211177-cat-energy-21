@@ -10,7 +10,26 @@ body {
 
 $mobile: 320px;
 $tablet: 768px;
-$desktop: 1200px;
+$desktop: 1440px;
+
+.container {
+  max-width: 280px;
+  margin: 0 auto;
+}
+
+@media (min-width: $tablet) {
+  .container {
+    max-width: 708px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: $desktop) {
+  .container {
+    max-width: 1220px;
+    margin: 0 auto;
+  }
+}
 
 @media (min-width: $mobile) {
   br {
@@ -42,6 +61,7 @@ $color-achromatic-extra-1: #d9d9d9;
 $color-achromatic-extra-2: #e7e7e7;
 $color-achromatic-extra-3: #e6e6e6;
 $color-achromatic-extra-4: #eaeaea;
+$color-achromatic-extra-5: #dcdcdc;
 
 $white: #ffffff;
 $black: #000000;

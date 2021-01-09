@@ -1,17 +1,17 @@
 .footer {
-  padding: 39px 20px 22px 20px;
+  padding: 39px 0 22px 0;
   background: $color-achromatic-6;
 }
 
 @media (min-width: $tablet) {
   .footer {
-    padding: 54px 30px 61px 30px;
+    padding: 56px 0 57px 0;
   }
 }
 
 @media (min-width: $desktop) {
   .footer {
-    padding: 54px 110px 61px 110px;
+    padding: 54px 0 57px 0;
   }
 }
 
@@ -30,7 +30,7 @@
 
 .footer__logo-text {
   display: block;
-  margin: -5px auto 30px auto;
+  margin: 0 auto 30px auto;
 }
 
 @media (min-width: $tablet) {
@@ -45,7 +45,7 @@
   justify-content: space-around;
   align-items: center;
   margin: 0;
-  padding: 20px 50px 16px 50px;
+  padding: 20px 58px 16px 55px;
   border-top: 1px solid $color-achromatic-extra-1;
   border-bottom: 1px solid $color-achromatic-extra-1;
   list-style: none;
@@ -76,7 +76,7 @@
 }
 
 .footer__grid-logo {
-  margin: 27px 0 0 0;
+  margin: 23px 0 0 0;
   display: flex;
 }
 

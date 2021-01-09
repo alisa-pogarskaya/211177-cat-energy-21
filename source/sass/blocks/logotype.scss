@@ -13,3 +13,12 @@
     }
   }
 }
+
+@media (min-width: $desktop) {
+  .logotype {
+
+    &--text {
+      width: 120px;
+    }
+  }
+}

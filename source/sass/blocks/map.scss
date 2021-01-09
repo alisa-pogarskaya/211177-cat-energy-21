@@ -20,13 +20,13 @@
 
 .map__info {
   order: 1;
-  padding: 28px 19px 32px 19px;
+  padding: 28px 0 26px 0;
   background-color: $white;
 }
 
 @media (min-width: $tablet) {
   .map__info {
-    padding: 68px 72px 55px 71px;
+    padding: 65px 72px 55px 71px;
   }
 }
 
@@ -50,6 +50,13 @@
 @media (min-width: $tablet) {
   .map__grid {
     grid-template-columns: 1fr 159px;
+    grid-gap: 294px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .map__grid {
+    grid-template-columns: 1fr 154px;
     grid-gap: 0;
   }
 }
