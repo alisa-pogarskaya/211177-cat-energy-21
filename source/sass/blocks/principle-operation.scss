@@ -10,7 +10,7 @@
 
 @media (min-width: $desktop) {
   .principle-operation {
-    padding: 0px 0 231px 0;
+    padding: 0 0 231px 0;
   }
 }
 
@@ -123,7 +123,10 @@
       background: url("../img/special_image_tablet_4.svg") no-repeat left top;
     }
 
-    &--number1, &--number2, &--number3, &--number4 {
+    &--number1,
+    &--number2,
+    &--number3,
+    &--number4 {
       z-index: -1;
       display: inline-block;
       position: absolute;
