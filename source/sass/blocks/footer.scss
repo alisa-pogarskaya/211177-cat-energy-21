@@ -1,17 +1,17 @@
 .footer {
-  padding: 39px 20px 22px 20px;
+  padding: 39px 0 22px 0;
   background: $color-achromatic-6;
 }
 
 @media (min-width: $tablet) {
   .footer {
-    padding: 39px 30px 22px 30px;
+    padding: 56px 0 57px 0;
   }
 }
 
 @media (min-width: $desktop) {
   .footer {
-    padding: 39px 110px 22px 110px;
+    padding: 54px 0 57px 0;
   }
 }
 
@@ -30,7 +30,7 @@
 
 .footer__logo-text {
   display: block;
-  margin: 0 auto 32px auto;
+  margin: 0 auto 30px auto;
 }
 
 @media (min-width: $tablet) {
@@ -43,8 +43,9 @@
 .footer__list {
   display: flex;
   justify-content: space-around;
+  align-items: center;
   margin: 0;
-  padding: 20px 50px 21px 50px;
+  padding: 20px 58px 16px 55px;
   border-top: 1px solid $color-achromatic-extra-1;
   border-bottom: 1px solid $color-achromatic-extra-1;
   list-style: none;
@@ -52,15 +53,30 @@
 
 @media (min-width: $tablet) {
   .footer__list {
-    max-width: 129px;
+    max-width: inherit;
     padding: 0 50px;
     border-top: none;
     border-bottom: none;
   }
 }
 
+@media (min-width: $desktop) {
+  .footer__list {
+    max-width: inherit;
+    padding: 0 120px;
+    border-top: none;
+    border-bottom: none;
+  }
+}
+
+@media (min-width: $tablet) {
+  .footer__item {
+    margin: 0 15px;
+  }
+}
+
 .footer__grid-logo {
-  margin: 27px 0 0 0;
+  margin: 23px 0 0 0;
   display: flex;
 }
 
@@ -85,7 +101,7 @@
 
 @media (min-width: $tablet) {
   .footer__copyright {
-    margin: auto 10px auto 0;
+    margin: auto 23px auto 0;
   }
 }
 

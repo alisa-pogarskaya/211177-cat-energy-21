@@ -1,21 +1,21 @@
 .principle-operation {
-  padding: 0 20px 42px 20px;
+  padding: 0 0 42px 0;
 }
 
 @media (min-width: $tablet) {
   .principle-operation {
-    padding: 0 30px 47px 30px;
+    padding: 0 0 75px 0;
   }
 }
 
 @media (min-width: $desktop) {
   .principle-operation {
-    padding: 0 110px 205px 110px;
+    padding: 0 0 231px 0;
   }
 }
 
 .principle-operation__title {
-  margin: 0 0 38px 0;
+  margin: 3px 0 37px 0;
   font-family: $font-main-regular;
   font-size: 36px;
   font-style: normal;
@@ -28,7 +28,7 @@
 
 @media (min-width: $tablet) {
   .principle-operation__title {
-    margin: 0 0 72px 0;
+    margin: 0 0 71px 0;
     font-size: 60px;
     line-height: 60px;
   }
@@ -45,7 +45,7 @@
     position: relative;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-row-gap: 77px;
+    grid-gap: 104px 57px;
     list-style-type: none;
     counter-reset: num;
   }
@@ -100,11 +100,12 @@
   .principle-operation__item {
     position: relative;
     z-index: 1;
-    max-width: 201px;
+    max-width: 250px;
     margin: 0;
     padding: 111px 0 30px 0;
     font-size: 16px;
     line-height: 24px;
+    letter-spacing: 0;
 
     &--image1 {
       background: url("../img/special_image_tablet_1.svg") no-repeat left top;
@@ -122,14 +123,13 @@
       background: url("../img/special_image_tablet_4.svg") no-repeat left top;
     }
 
-    &::before {
-      content: counter(num);
-      counter-increment: num;
+    &--number1,
+    &--number2,
+    &--number3,
+    &--number4 {
       z-index: -1;
       display: inline-block;
       position: absolute;
-      top: -40px;
-      right: 90px;
       width: 1px;
       height: 1px;
       font-family: $font-main-regular;
@@ -140,6 +140,26 @@
       letter-spacing: 0;
       text-align: right;
       color: $color-extra;
+    }
+
+    &--number1 {
+      top: -40px;
+      right: 127px;
+    }
+
+    &--number2 {
+      top: -40px;
+      right: 133px;
+    }
+
+    &--number3 {
+      top: -40px;
+      right: 132px;
+    }
+
+    &--number4 {
+      top: -40px;
+      right: 130px;
     }
   }
 }

@@ -1,5 +1,23 @@
-@media (min-width: 768px) {
+.logotype {
+  &--text {
+    margin-left: -20px;
+  }
+}
+
+@media (min-width: $tablet) {
   .logotype {
     margin: 0 12px 0 0;
+
+    &--text {
+      margin-left: 0;
+    }
+  }
+}
+
+@media (min-width: $desktop) {
+  .logotype {
+    &--text {
+      width: 120px;
+    }
   }
 }
