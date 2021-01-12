@@ -239,12 +239,10 @@
     </footer>
 
     <script>
-      var rangeSlider = document.querySelector('.slider__range');
-      var sliderItemBefore = document.querySelector('.slider__item--before');
-      var sliderItemAfter = document.querySelector('.slider__item--after');
+      var rangeSlider = document.querySelector('.slider-range__range');
+      var sliderItemBefore = document.querySelector('.slider-range__item--before');
       function moveSlider() {
         sliderItemBefore.style.width = rangeSlider.value + "%";
-        sliderItemAfter.style.width = rangeSlider.value;
       }
     </script>
 

@@ -7,7 +7,7 @@
 .nav__list {
   list-style: none;
   padding: 0;
-  margin: 16px 0 0 0;
+  margin: 10px 0 0 0;
   border-bottom: 1px solid $color-achromatic-extra-3;
 }
 
@@ -22,7 +22,7 @@
 }
 
 .nav__item {
-  padding: 22px 0;
+  padding: 22px 0 23px 0;
   border-top: 1px solid $color-achromatic-extra-3;
 
   &--active-extra {

@@ -21,21 +21,32 @@
 @media (min-width: $tablet) {
   .submit {
     margin: 0;
+    padding: 14px 0 14px 0;
+    font-size: 20px;
+    line-height: 24px;
   }
 }
 
 .submit__grid {
-  margin: 0 0 32px 0;
-  padding: 0 20px 0 20px;
+  margin-bottom: 32px;
 }
 
 @media (min-width: $tablet) {
   .submit__grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 282px 1fr;
     grid-gap: 60px;
-    margin: 0 0 72px 0;
-    padding: 0;
+    margin-bottom: 72px;
+    margin-left: 41px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .submit__grid {
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 80px;
+    margin-bottom: 82px;
+    margin-left: 0;
   }
 }
 
@@ -53,7 +64,14 @@
 
 @media (min-width: $tablet) {
   .submit__caption {
+    margin-top: 14px;
     text-align: left;
     font-size: 16px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .submit__caption {
+    margin-top: 18px;
   }
 }

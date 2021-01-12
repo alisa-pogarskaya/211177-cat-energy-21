@@ -10,14 +10,22 @@
 
     <header class="header header__grid-main">
       <div class="header__col-main header__grid-logotype">
-        <img class="logotype" src="img/logo_mobile.svg">
-        <img class="logotype-text" src="img/footer_logo_2.svg">
+
+        <picture>
+          <source media="(min-width:1440px)" srcset="img/logo_desktop.svg">
+          <source media="(min-width:768px)" srcset="img/logo_tablet.svg">
+          <img src="img/logo_mobile.svg"
+          alt="Логотип"
+          class="logotype">
+        </picture>
+
+        <img class="logotype--text" src="img/footer_logo_2.svg">
         <img class="close" src="img/close_mobile.svg" width="18px" height="18px" alt="Закрыть меню">
       </div>
       <nav class="nav">
         <ul class="nav__list">
           <li class="nav__item">
-            <a class="nav__link  nav__link--extra" href="index.html">
+            <a class="nav__link nav__link--extra" href="index.html">
               Главная
             </a>
           </li>
@@ -35,12 +43,12 @@
       </nav>
     </header>
 
-    <section class="screen-title">
+    <section class="screen-title container">
       <h1 class="screen-title__h1">
         Подбор программы
       </h1>
       <span class="screen-title__subtitle">
-        Заполните анкету, и мы подберем программу питания для вашего кота
+        Заполните анкету, и мы подберем программу&nbsp;питания для вашего кота
       </span>
     </section>
 
@@ -48,138 +56,182 @@
       <div class="form__grid form__grid--two-collumn">
 
         <div class="form__col">
-          <ul class="label-main label-main__grid">
-            <li class="label-main__item">
-              <label class="label-main__caption">
-                <span>
-                  ИМЯ:*
-                </span>
-                <input class="label-main__input" type="text" name="user-name" required>
-              </label>
-            </li>
-            <li class="label-main__item">
-              <label class="label-main__caption">
-                <span>
-                  Вес (кг):*
-                </span>
-                <input class="label-main__input" type="number" name="user-weight" required>
-              </label>
-            </li>
-            <li class="label-main__item">
-              <label class="label-main__caption">
-                <span>
-                  Возраст (лет):
-                </span>
-                <input class="label-main__input" type="number" name="user-age">
-              </label>
-            </li>
-          </ul>
+          <div class="container">
+            <ul class="label-main label-main__container-1">
+              <li class="label-main__item">
+                <label class="label-main__caption">
+                  <span>
+                    ИМЯ:*
+                  </span>
+                  <input class="label-main__input" type="text" name="user-name" required>
+                </label>
+              </li>
+              <li class="label-main__item">
+                <label class="label-main__caption">
+                  <span>
+                    Вес (кг):*
+                  </span>
+                  <input class="label-main__input" type="number" name="user-weight" required>
+                </label>
+              </li>
+              <li class="label-main__item">
+                <label class="label-main__caption">
+                  <span>
+                    Возраст (лет):
+                  </span>
+                  <input class="label-main__input" type="number" name="user-age">
+                </label>
+              </li>
+            </ul>
+          </div>
         </div>
 
         <div class="form__col">
-          <ul class="radio-main radio-main__grid">
-            <li class="radio-main__item">
-              <label class="radio-main__caption">
-                <input class="radio-main__input" type="radio" name="radio-weight-selection" checked>
-                Похудение
-              </label>
-            </li>
-            <li class="radio-main__item">
-              <label class="radio-main__caption">
-                <input class="radio-main__input" type="radio" name="radio-weight-selection">
-                Набор массы
-              </label>
-            </li>
-            <li class="radio-main__item">
-              <label class="radio-main__caption">
-                <input class="radio-main__input" type="radio" name="radio-weight-selection">
-                Не знаю (Нужен ваш совет)
-              </label>
-            </li>
-          </ul>
+          <div class="radio-main__border">
+            <div class="container">
+              <ul class="radio-main">
+                <li class="radio-main__item">
+
+                  <label class="radio-main__caption">
+                    <input type="radio" name="radio-weight-selection" checked>
+                    <div class="radio-main__text">Похудение</div>
+                  </label>
+
+                </li>
+                <li class="radio-main__item">
+
+                  <label class="radio-main__caption">
+                    <input type="radio" name="radio-weight-selection">
+                    <div class="radio-main__text">Набор массы</div>
+                  </label>
+
+                </li>
+                <li class="radio-main__item">
+
+                  <label class="radio-main__caption">
+                    <input type="radio" name="radio-weight-selection">
+                    <div class="radio-main__text">Не знаю (Нужен ваш совет)</div>
+                  </label>
+
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
 
       </div>
 
       <h2 class="form__title">
-        Контактные данные (владельца кота)
+        <div class="container">
+          <span>
+            Контактные данные (владельца кота)
+          </span>
+        </div>
       </h2>
 
-      <div class="form__grid form__grid--two-collumn label-main__container">
+      <div class="form__grid label-main__container container">
+        <div class="label-main label-main__container-2">
+          <div class="form__col">
+            <div class="label-main__grid">
+              <div class="label-main__item label-main__item--extra-padding">
+                <label class="label-main__caption">
+                  <span>
+                    E-mail:*
+                  </span>
+                  <input class="label-main__input" type="email" name="user-mail" placeholder="kuklachev@gmail.com" required>
+                  <img class="label-main__input--mail-icon" src="../img/icon_email.svg" alt="иконка почты">
+                </label>
+              </div>
+            </div>
+          </div>
 
-        <div class="form__col">
-          <div class="label-main label-main__grid">
-            <div class="label-main__item">
-              <label class="label-main__caption">
-                E-mail:*
-                <input class="label-main__input" type="email" name="user-mail" placeholder="kuklachev@gmail.com" required>
-              </label>
+          <div class="form__col">
+            <div class="label-main__grid ">
+              <div class="label-main__item">
+                <label class="label-main__caption">
+                  <span>
+                    Телефон:*
+                  </span>
+                  <input class="label-main__input" type="tel" name="user-number" placeholder="8(960)900-60-90" required>
+                  <img class="label-main__input--phone-icon" src="../img/icone_phone.svg" alt="иконка телефона">
+                </label>
+              </div>
             </div>
           </div>
         </div>
-
-        <div class="form__col">
-          <div class="label-main label-main__grid">
-            <div class="label-main__item">
-              <label class="label-main__caption">
-                Телефон:*
-                <input class="label-main__input" type="tel" name="user-number" placeholder="8(960)900-60-90" required>
-              </label>
-            </div>
-          </div>
-        </div>
-
       </div>
 
-      <h2 class="form__title">
-        Комментарий
+      <h2 class="form__title form__title--extra-margin">
+        <div class="container">
+          <span>
+            Комментарий
+          </span>
+        </div>
       </h2>
 
       <div class="textarea textarea__item">
-        <textarea class="textarea__input" name="user-textarea" placeholder="Расскажите обо всех повадках кота"></textarea>
+        <div class="container">
+          <textarea class="textarea__input " name="user-textarea" placeholder="Расскажите обо всех повадках кота"></textarea>
+        </div>
       </div>
 
-      <h2 class="form__title">
-        Дополнительно
+      <h2 class="form__title form__title--extra-margin-2">
+        <div class="container">
+          <span>
+            Дополнительно
+          </span>
+        </div>
       </h2>
 
       <div class="form__grid">
 
         <div class="form__col">
-          <ul class="checkbox-main checkbox-main__grid">
-            <li class="checkbox-main__item">
-              <label class="checkbox-main__caption">
-                <input class="checkbox-main__input" type="checkbox" name="checkbox-additionally" checked>
-                сахарозаменитель
-              </label>
-            </li>
-            <li class="checkbox-main__item">
-              <label class="checkbox-main__caption">
-                <input class="checkbox-main__input" type="checkbox" name="checkbox-additionally" checked>
-                питьевая вода
-              </label>
-            </li>
-            <li class="checkbox-main__item">
-              <label class="checkbox-main__caption">
-                <input class="checkbox-main__input" type="checkbox" name="checkbox-additionally" checked>
-                молоко
-              </label>
-            </li>
-            <li class="checkbox-main__item">
-              <label class="checkbox-main__caption">
-                <input class="checkbox-main__input" type="checkbox" name="checkbox-additionally" checked>
-                витамины
-              </label>
-            </li>
-          </ul>
+          <div class="container">
+            <ul class="checkbox-main checkbox-main__grid">
+              <li class="checkbox-main__item">
+
+                <label class="checkbox-main__caption">
+                  <input type="checkbox" name="checkbox-additionally" checked>
+                  <div class="checkbox-main__text">сахарозаменитель</div>
+                </label>
+
+              </li>
+              <li class="checkbox-main__item">
+
+                <label class="checkbox-main__caption">
+                  <input type="checkbox" name="checkbox-additionally">
+                  <div class="checkbox-main__text">питьевая вода</div>
+                </label>
+
+              </li>
+              <li class="checkbox-main__item">
+
+                <label class="checkbox-main__caption">
+                  <input type="checkbox" name="checkbox-additionally">
+                  <div class="checkbox-main__text">молоко</div>
+                </label>
+
+              </li>
+              <li class="checkbox-main__item">
+
+                <label class="checkbox-main__caption">
+                  <input type="checkbox" name="checkbox-additionally">
+                  <div class="checkbox-main__text">витамины</div>
+                </label>
+
+              </li>
+            </ul>
+          </div>
         </div>
 
         <div class="form__col">
+          <div class="container">
           <div class="submit__grid">
               <input class="submit" type="submit" value="отправить заявку">
               <span class="submit__caption">
                 * — Обязательные поля
               </span>
+          </div>
           </div>
         </div>
 
@@ -188,32 +240,38 @@
 
     <section class="map map__grid-main">
       <iframe class="map__background" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533293!2d30.320858715925993!3d59.93871648187619!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1605894448396!5m2!1sru!2sru" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-      <div class="map__info">
-        <div class="map__grid">
-          <div class="map__col map__col--1">
-            <h3 class="map__title">
-              приглашаем к сотрудничеству дилеров!
-            </h3>
+
+        <div class="map__info map__info--extra">
+          <div class="container">
+            <div class="map__grid">
+              <div class="map__col map__col--1">
+                <h3 class="map__title">
+                  Приглашаем к&nbsp;сотрудничеству дилеров!
+                </h3>
+              </div>
+              <div class="map__col map__col--2">
+                <p class="map__address">
+                  ул. Большая Конюшенная, д. 19/8 <span>Санкт-Петербург</span>
+                </p>
+              </div>
+            </div>
           </div>
-          <div class="map__col map__col--2">
-            <p class="map__address">
-              ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
-            </p>
-          </div>
-        </div>
+
       </div>
     </section>
 
     <footer class="footer">
-      <div class="footer__grid-main">
+      <div class="footer__grid-main container">
         <div class="footer__col-main">
-          <img class="footer__logo-text" src="img/footer_logo_2.svg">
+          <img
+          class="footer__logo-text"
+          src="img/footer_logo_2.svg" width="128px" height="24px">
         </div>
         <div class="footer__col-main">
           <ul class="footer__list">
             <li class="footer__item">
               <a class="footer__link" href="#">
-                <img class="footer__social" src="img/icon_vkontakte.svg">
+                  <img class="footer__social" src="img/icon_vkontakte.svg">
               </a>
             </li>
             <li class="footer__item">
