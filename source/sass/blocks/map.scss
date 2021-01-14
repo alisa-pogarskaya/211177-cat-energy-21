@@ -3,9 +3,14 @@
 }
 
 .map__grid-main {
-  margin-top: 97px;
   display: flex;
   flex-direction: column;
+}
+
+@media (min-width: $desktop) {
+  .map__grid-main {
+    margin-top: 97px;
+  }
 }
 
 .map__background {

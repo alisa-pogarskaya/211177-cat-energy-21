@@ -30,7 +30,7 @@
   .example {
     padding: 0;
     border-top: none;
-    background: linear-gradient(to left, $color-achromatic-extra-4 50px, $color-extra 40%); /*$color-achromatic-extra-4 80px, $color-extra*/
+    background: linear-gradient(to left, $color-achromatic-extra-4 45%, $color-extra 40%); /*$color-achromatic-extra-4 80px, $color-extra*/
 
     &::after {
       height: auto;

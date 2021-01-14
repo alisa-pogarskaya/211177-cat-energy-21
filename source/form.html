@@ -93,7 +93,7 @@
                 <li class="radio-main__item">
 
                   <label class="radio-main__caption">
-                    <input type="radio" name="radio-weight-selection" checked>
+                    <input type="radio" name="radio-weight-selection" value="weight_loss" checked>
                     <div class="radio-main__text">Похудение</div>
                   </label>
 
@@ -101,7 +101,7 @@
                 <li class="radio-main__item">
 
                   <label class="radio-main__caption">
-                    <input type="radio" name="radio-weight-selection">
+                    <input type="radio" name="radio-weight-selection" value="weight_gain">
                     <div class="radio-main__text">Набор массы</div>
                   </label>
 
@@ -109,7 +109,7 @@
                 <li class="radio-main__item">
 
                   <label class="radio-main__caption">
-                    <input type="radio" name="radio-weight-selection">
+                    <input type="radio" name="radio-weight-selection" value="i_do_not_know">
                     <div class="radio-main__text">Не знаю (Нужен ваш совет)</div>
                   </label>
 
@@ -139,7 +139,7 @@
                     E-mail:*
                   </span>
                   <input class="label-main__input" type="email" name="user-mail" placeholder="kuklachev@gmail.com" required>
-                  <img class="label-main__input--mail-icon" src="../img/icon_email.svg" alt="иконка почты">
+                  <img class="label-main__input--mail-icon" src="img/icon_email.svg" alt="иконка почты">
                 </label>
               </div>
             </div>
@@ -149,11 +149,11 @@
             <div class="label-main__grid ">
               <div class="label-main__item">
                 <label class="label-main__caption">
-                  <span>
+                  <span class="label-main__caption--2">
                     Телефон:*
                   </span>
                   <input class="label-main__input" type="tel" name="user-number" placeholder="8(960)900-60-90" required>
-                  <img class="label-main__input--phone-icon" src="../img/icone_phone.svg" alt="иконка телефона">
+                  <img class="label-main__input--phone-icon" src="img/icone_phone.svg" alt="иконка телефона">
                 </label>
               </div>
             </div>
@@ -191,7 +191,7 @@
               <li class="checkbox-main__item">
 
                 <label class="checkbox-main__caption">
-                  <input type="checkbox" name="checkbox-additionally" checked>
+                  <input type="checkbox" name="checkbox-additionally" value="sweetener" checked>
                   <div class="checkbox-main__text">сахарозаменитель</div>
                 </label>
 
@@ -199,7 +199,7 @@
               <li class="checkbox-main__item">
 
                 <label class="checkbox-main__caption">
-                  <input type="checkbox" name="checkbox-additionally">
+                  <input type="checkbox" name="checkbox-additionally" value="drinking_water">
                   <div class="checkbox-main__text">питьевая вода</div>
                 </label>
 
@@ -207,7 +207,7 @@
               <li class="checkbox-main__item">
 
                 <label class="checkbox-main__caption">
-                  <input type="checkbox" name="checkbox-additionally">
+                  <input type="checkbox" name="checkbox-additionally" value="milk">
                   <div class="checkbox-main__text">молоко</div>
                 </label>
 
@@ -215,7 +215,7 @@
               <li class="checkbox-main__item">
 
                 <label class="checkbox-main__caption">
-                  <input type="checkbox" name="checkbox-additionally">
+                  <input type="checkbox" name="checkbox-additionally" value="vitamins">
                   <div class="checkbox-main__text">витамины</div>
                 </label>
 
@@ -271,24 +271,26 @@
           <ul class="footer__list">
             <li class="footer__item">
               <a class="footer__link" href="#">
-                  <img class="footer__social" src="img/icon_vkontakte.svg">
+                  <img class="footer__social footer__social--vk" src="img/icon_vkontakte.svg">
               </a>
             </li>
             <li class="footer__item">
               <a class="footer__link" href="#">
-                <img class="footer__social" src="img/icon_instagram.svg">
+                <img class="footer__social footer__social--instagram" src="img/icon_instagram.svg">
               </a>
             </li>
             <li class="footer__item">
               <a class="footer__link" href="#">
-                <img class="footer__social" src="img/icon_facebook.svg">
+                <img class="footer__social footer__social--facebook" src="img/icon_facebook.svg">
               </a>
             </li>
           </ul>
         </div>
         <div class="footer__col-main footer__grid-logo">
-          <span class="footer__copyright">HTML Academy</span>
-          <img class="footer__logo" wight="27px" height="34px" src="img/htmlacademy.svg">
+          <a class="footer__logo-link" href="#">
+            <span class="footer__copyright">HTML Academy</span>
+            <img class="footer__logo" wight="27px" height="34px" src="img/htmlacademy.svg">
+          </a>
         </div>
       </div>
     </footer>
