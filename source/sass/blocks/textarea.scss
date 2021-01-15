@@ -1,36 +1,49 @@
-.textarea {
-  margin: 0 0 27px 0;
-  padding: 0 20px 0 20px;
-}
-
 @media (min-width: $tablet) {
   .textarea {
-    margin: 0 0 65px 0;
-    padding: 0 67px 0 70px;
+    margin-bottom: -10px;
   }
 }
 
 @media (min-width: $desktop) {
   .textarea {
-    padding: 0 110px 0 110px;
+    margin-bottom: 68px;
   }
 }
 
 .textarea__input {
+  display: block;
   width: 100%;
-  height: 150px;
+  height: 145px;
   border: 1px solid $color-achromatic-extra-2;
+  padding: 8px 12px 23px 15px;
+  font-family: $font-main-regular;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0;
+  text-align: left;
+  text-transform: uppercase;
+  color: $color-achromatic-2;
+}
 
-  &::placeholder {
-    padding: 13px 12px 23px 15px;
-    font-family: $font-main-regular;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 18px;
-    letter-spacing: 0;
-    text-align: left;
-    text-transform: uppercase;
-    color: $color-achromatic-2;
+@media (min-width: $tablet) {
+  .textarea__input {
+    width: 625px;
+    height: 169px;
+    margin-right: 37px;
+    margin-left: 41px;
+    border: 1px solid $color-achromatic-extra-2;
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .textarea__input {
+    width: 100%;
+    height: 169px;
+    margin-right: 0;
+    margin-left: 0;
   }
 }

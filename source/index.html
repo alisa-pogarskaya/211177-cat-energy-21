@@ -216,35 +216,35 @@
           <ul class="footer__list">
             <li class="footer__item">
               <a class="footer__link" href="#">
-                  <img class="footer__social" src="img/icon_vkontakte.svg">
+                  <img class="footer__social footer__social--vk" src="img/icon_vkontakte.svg">
               </a>
             </li>
             <li class="footer__item">
               <a class="footer__link" href="#">
-                <img class="footer__social" src="img/icon_instagram.svg">
+                <img class="footer__social footer__social--instagram" src="img/icon_instagram.svg">
               </a>
             </li>
             <li class="footer__item">
               <a class="footer__link" href="#">
-                <img class="footer__social" src="img/icon_facebook.svg">
+                <img class="footer__social footer__social--facebook" src="img/icon_facebook.svg">
               </a>
             </li>
           </ul>
         </div>
         <div class="footer__col-main footer__grid-logo">
-          <span class="footer__copyright">HTML Academy</span>
-          <img class="footer__logo" wight="27px" height="34px" src="img/htmlacademy.svg">
+          <a class="footer__logo-link" href="#">
+            <span class="footer__copyright">HTML Academy</span>
+            <img class="footer__logo" wight="27px" height="34px" src="img/htmlacademy.svg">
+          </a>
         </div>
       </div>
     </footer>
 
     <script>
-      var rangeSlider = document.querySelector('.slider__range');
-      var sliderItemBefore = document.querySelector('.slider__item--before');
-      var sliderItemAfter = document.querySelector('.slider__item--after');
+      var rangeSlider = document.querySelector('.slider-range__range');
+      var sliderItemBefore = document.querySelector('.slider-range__item--before');
       function moveSlider() {
         sliderItemBefore.style.width = rangeSlider.value + "%";
-        sliderItemAfter.style.width = rangeSlider.value;
       }
     </script>
 

@@ -1,18 +1,18 @@
 .screen-title {
-  padding: 27px 20px 12px 20px;
+  padding: 25px 0 12px 0;
   font-style: normal;
   font-weight: 400;
 }
 
 @media (min-width: $tablet) {
   .screen-title {
-    padding: 64px 30px 39px 30px;
+    padding: 62px 0 39px 0;
   }
 }
 
 @media (min-width: $desktop) {
   .screen-title {
-    padding: 64px 110px 39px 110px;
+    padding: 67px 0 39px 0;
   }
 }
 
@@ -33,12 +33,19 @@
   }
 }
 
+@media (min-width: $desktop) {
+  .screen-title__h1 {
+    margin: 0 0 58px 0;
+  }
+}
+
 .screen-title__subtitle {
   font-family: $font-main-regular;
   font-size: 14px;
-  line-height: 18px;
+  line-height: 16px;
   letter-spacing: 0;
   text-align: left;
+  text-transform: uppercase;
 }
 
 @media (min-width: $tablet) {

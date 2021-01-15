@@ -1,66 +1,106 @@
 .label-main {
-  padding: 0 19px 27px 19px;
   font-style: normal;
   font-weight: 400;
 }
 
+.label-main__container-1 {
+  padding: 0 0 8px 0;
+}
+
 @media (min-width: $tablet) {
-  .label-main {
-    padding: 0 0 27px 0;
+  .label-main__container-1 {
+    margin-bottom: 0;
+    padding-right: 37px;
+    padding-left: 41px;
+    padding-bottom: 72px;
   }
 }
 
 @media (min-width: $desktop) {
-  .label-main {
-    margin: 0;
-    padding: 0 0 69px 0;
+  .label-main__container-1 {
+    padding-right: 0;
+    padding-left: 0;
+    padding-bottom: 41px;
   }
 }
 
+.label-main__container-2 {
+  padding: 0 0 24px 0;
+}
+
 @media (min-width: $tablet) {
-  .label-main__container {
-    margin: 0 0 38px 0;
+  .label-main__container-2 {
+    margin-bottom: 0;
+    padding-right: 37px;
+    padding-left: 41px;
+    padding-bottom: 12px;
   }
 }
 
 @media (min-width: $desktop) {
-  .label-main__container {
-    margin: 0;
+  .label-main__container-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 80px;
+    padding-right: 0;
+    padding-left: 0;
+    padding-bottom: 42px;
   }
 }
 
 .label-main__item {
+  position: relative;
   margin: 0 0 13px 0;
   list-style: none;
 
   &:last-child {
     margin: 0;
   }
+
+  &--extra-padding {
+    padding-bottom: 13px;
+  }
 }
 
 @media (min-width: $tablet) {
   .label-main__item {
-    margin: 0 0 20px 0;
+    margin: 0 0 16px 0;
     list-style: none;
 
     &:last-child {
       margin: 0;
     }
+
+    &--extra-padding {
+      padding-bottom: 18px;
+    }
   }
 }
 
 .label-main__caption {
+  position: relative;
   width: 100%;
   display: flex;
+  align-items: center;
   font-family: $font-main-regular;
   font-size: 16px;
   line-height: 18px;
   letter-spacing: 0;
   text-align: left;
+  white-space: nowrap;
 
   & span {
     padding: 0 13px 0 0;
     text-transform: uppercase;
+  }
+
+  &--1 {
+    padding: 0 15px 0 0;
+  }
+
+  &--2 {
+    margin: -2px 0 0 -3px;
+    padding: 0 13px 0 0;
   }
 }
 
@@ -68,25 +108,61 @@
   .label-main__caption {
     font-size: 20px;
     line-height: 30px;
+
+    & span {
+      padding: 0 18px 0 0;
+    }
   }
 }
 
 .label-main__input {
+  min-height: 45px;
   width: 100%;
-  padding: 13px 15px 13px 15px;
+  padding: 11px 15px 13px 15px;
   border: 1px solid $color-achromatic-extra-2;
   box-sizing: border-box;
+  font-family: $font-main-regular;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0;
+  text-align: left;
+  text-transform: uppercase;
+  color: $color-achromatic-2;
 
-  &::placeholder {
-    padding: 13px 12px 23px 15px;
-    font-family: $font-main-regular;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 18px;
-    letter-spacing: 0;
-    text-align: left;
-    text-transform: uppercase;
-    color: $color-achromatic-2;
+  &--mail-icon {
+    position: absolute;
+    width: 20px;
+    height: 14px;
+    top: 16px;
+    right: 15px;
+  }
+
+  &--phone-icon {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 13px;
+    right: 13px;
+  }
+}
+
+@media (min-width: $tablet) {
+  .label-main__input {
+    min-height: 53px;
+    padding: 10px 15px 13px 20px;
+    font-size: 20px;
+    line-height: 30px;
+
+    &--mail-icon {
+      top: 18px;
+      right: 15px;
+    }
+
+    &--phone-icon {
+      top: 16px;
+      right: 16px;
+    }
   }
 }

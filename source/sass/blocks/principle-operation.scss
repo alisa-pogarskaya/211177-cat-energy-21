@@ -91,6 +91,13 @@
     background: url("../img/special_image_4.svg") no-repeat left top;
   }
 
+  &--number1,
+  &--number2,
+  &--number3,
+  &--number4 {
+    display: none;
+  }
+
   &:last-child {
     margin: 0;
   }

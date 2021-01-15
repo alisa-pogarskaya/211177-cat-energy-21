@@ -1,13 +1,11 @@
 .radio-main {
-  margin: 0 0 26px 0;
-  padding: 20px 20px 22px 20px;
-  border-top: 1px solid $color-achromatic-extra-1;
-  border-bottom: 1px solid $color-achromatic-extra-1;
+  padding: 10px 20px 0 0;
 }
 
 @media (min-width: $tablet) {
   .radio-main {
-    margin: 0 0 71px 0;
+    margin: 0 37px 0 41px;
+    padding: 30px 20px 27px 20px;
     border-top: 1px solid $color-achromatic-extra-1;
     border-right: 1px solid $color-achromatic-extra-1;
     border-bottom: 1px solid $color-achromatic-extra-1;
@@ -17,12 +15,26 @@
 
 @media (min-width: $desktop) {
   .radio-main {
-    margin: 0;
+    margin: 16px 0 0 0;
+    padding: 30px 20px 31px 20px;
+  }
+}
+
+.radio-main__border {
+  border-top: 1px solid $color-achromatic-extra-1;
+  border-bottom: 1px solid $color-achromatic-extra-1;
+}
+
+@media (min-width: $tablet) {
+  .radio-main__border {
+    border-top: none;
+    border-bottom: none;
   }
 }
 
 .radio-main__item {
-  margin: 0 0 19px 0;
+  height: 30px;
+  margin: 0 0 14px 0;
   list-style: none;
 
   &:last-child {
@@ -30,7 +42,23 @@
   }
 }
 
-.radio-main__caption {
+@media (min-width: $tablet) {
+  .radio-main__item {
+    margin: 0 0 23px 0;
+  }
+}
+
+.radio-main__caption input {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+  margin: 10px 0 0 7px;
+}
+
+.radio-main__text {
+  position: relative;
+  padding: 0 0 0 45px;
+  cursor: pointer;
   font-family: $font-main-regular;
   font-size: 16px;
   font-style: normal;
@@ -42,9 +70,57 @@
 }
 
 @media (min-width: $tablet) {
-  .radio-main__caption {
+  .radio-main__text {
+    padding: 0 0 0 67px;
     font-family: $font-main-regular;
     font-size: 20px;
     line-height: 30px;
   }
+}
+
+.radio-main__text::before {
+  content: "";
+  position: absolute;
+  top: -7px;
+  left: 0;
+  width: 30px;
+  height: 30px;
+  border: 1px solid $color-achromatic-4;
+  border-radius: 50%;
+  background: $white;
+}
+
+@media (min-width: $tablet) {
+  .radio-main__text::before {
+    top: -7px;
+    left: 5px;
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.radio-main__text::after {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 9px;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: $color-main;
+  opacity: 0;
+  transition: 0.2s;
+}
+
+@media (min-width: $tablet) {
+  .radio-main__text::after {
+    top: 5px;
+    left: 17px;
+    width: 18px;
+    height: 18px;
+  }
+}
+
+.radio-main__caption input:checked + .radio-main__text::after {
+  opacity: 1;
 }
