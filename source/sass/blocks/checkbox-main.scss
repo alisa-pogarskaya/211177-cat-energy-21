@@ -1,5 +1,5 @@
 .checkbox-main {
-  padding: 0 0 19px 0;
+  padding: 0 0 22px 0;
 }
 
 @media (min-width: $tablet) {
@@ -13,7 +13,8 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 36px 23px;
-    margin-bottom: 54px;
+    margin-top: 20px;
+    margin-bottom: 51px;
     margin-left: 41px;
   }
 }
@@ -69,7 +70,7 @@
 
 .checkbox-main__text {
   position: relative;
-  padding: 0 0 6px 45px;
+  padding: 0 0 5px 45px;
   cursor: pointer;
   font-family: $font-main-regular;
   font-size: 16px;

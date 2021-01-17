@@ -6,12 +6,13 @@
 
 @media (min-width: $tablet) {
   .cart-present {
+    height: 100%;
+    box-sizing: border-box;
     display: flex;
-    justify-content: space-around;
-    width: auto;
-    height: auto;
+    justify-content: space-between;
+    align-items: center;
     padding: 57px 124px 60px 78px;
-    background: url("../img/gift_photo_mobile.jpg") no-repeat center center;
+    background: url("../img/gift_photo_tablet.jpg") no-repeat center center;
     background-size: cover;
   }
 }
@@ -19,8 +20,9 @@
 @media (min-width: $desktop) {
   .cart-present {
     display: block;
-    height: auto;
+    height: 289px;
     padding: 0;
+    background: url("../img/gift_photo_desktop.jpg") no-repeat center center;
   }
 }
 
@@ -59,22 +61,15 @@
 
 @media (min-width: $tablet) {
   .cart-present__paragrafe {
-    margin: 0;
+    max-width: auto;
+    margin: 5px 0 0 0;
     text-align: left;
   }
 }
 
-@media (min-width: $tablet) {
+@media (min-width: $desktop) {
   .cart-present__paragrafe {
-    max-width: 161px;
     margin: 0 auto;
-    font-family: $font-extra-regular;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 20px;
-    letter-spacing: 0;
     text-align: center;
-    color: $white;
   }
 }

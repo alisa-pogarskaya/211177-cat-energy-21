@@ -1,18 +1,20 @@
 .catalog-products {
-  margin: 0 0 28px 0;
+  margin: -8px 0 28px 0;
 }
 
 @media (min-width: $tablet) {
   .catalog-products {
-    margin: 0 0 68px 0;
+    max-width: 708px;
+    margin: 71px auto 17px auto;
     padding: 0 30px 0 30px;
   }
 }
 
 @media (min-width: $desktop) {
   .catalog-products {
-    margin: 0 0 75px 0;
-    padding: 0 110px 0 110px;
+    max-width: 1220px;
+    margin: 71px auto 35px auto;
+    padding: 0;
   }
 }
 
@@ -32,8 +34,8 @@
 
 @media (min-width: $desktop) {
   .catalog-products__list {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-gap: 63px 80px;
+    grid-template-columns: 245px 245px 245px 245px;
+    grid-gap: 144px 80px;
   }
 }
 
