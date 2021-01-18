@@ -12,10 +12,10 @@
 
 .textarea__input {
   display: block;
-  width: 100%;
-  height: 145px;
+  width: 251px;
+  height: 114px;
   border: 1px solid $color-achromatic-extra-2;
-  padding: 8px 12px 23px 15px;
+  padding: 11px 12px 23px 15px;
   font-family: $font-main-regular;
   font-size: 16px;
   font-style: normal;
@@ -29,9 +29,9 @@
 
 @media (min-width: $tablet) {
   .textarea__input {
-    width: 625px;
-    height: 169px;
-    margin-right: 37px;
+    width: 601px;
+    height: 140px;
+    margin-right: 0;
     margin-left: 41px;
     border: 1px solid $color-achromatic-extra-2;
     font-size: 20px;

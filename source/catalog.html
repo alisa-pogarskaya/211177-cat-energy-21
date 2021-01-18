@@ -10,8 +10,16 @@
 
     <header class="header header__grid-main">
       <div class="header__col-main header__grid-logotype">
-        <img class="logotype" src="img/logo_mobile.svg">
-        <img class="logotype-text" src="img/footer_logo_2.svg">
+
+        <picture>
+          <source media="(min-width:1440px)" srcset="img/logo_desktop.svg">
+          <source media="(min-width:768px)" srcset="img/logo_tablet.svg">
+          <img src="img/logo_mobile.svg"
+          alt="Логотип"
+          class="logotype">
+        </picture>
+
+        <img class="logotype--text" src="img/footer_logo_2.svg">
         <img class="close" src="img/close_mobile.svg" width="18px" height="18px" alt="Закрыть меню">
       </div>
       <nav class="nav">
@@ -35,7 +43,7 @@
       </nav>
     </header>
 
-    <section class="screen-title">
+    <section class="screen-title container">
       <h1 class="screen-title__h1">
         Каталог продукции
       </h1>
@@ -46,7 +54,14 @@
         <li class="catalog-products__item">
 
           <div class="cart-catalog cart-catalog__grid">
-            <img class="cart-catalog__image" src="img/catalog_mobile_1.png" alt="Изображение Cat Energy PRO 500 г">
+
+            <picture>
+              <source media="(min-width:768px)" srcset="img/catalog_tablet_1.png">
+              <img src="img/catalog_mobile_1.png"
+              alt="Изображение Cat Energy PRO 500 г"
+              class="cart-catalog__image">
+            </picture>
+
             <div>
               <h3 class="cart-catalog__title">
                 Cat Energy PRO 500 г
@@ -73,7 +88,14 @@
         <li class="catalog-products__item">
 
           <div class="cart-catalog cart-catalog__grid">
-            <img class="cart-catalog__image" src="img/catalog_mobile_2.png" alt="Изображение Cat Energy PRO 1000 г">
+
+            <picture>
+              <source media="(min-width:768px)" srcset="img/catalog_tablet_2.png">
+              <img src="img/catalog_mobile_2.png"
+              alt="Изображение Cat Energy PRO 1000 г"
+              class="cart-catalog__image">
+            </picture>
+
             <div>
               <h3 class="cart-catalog__title">
                 Cat Energy PRO 1000 г
@@ -100,7 +122,14 @@
         <li class="catalog-products__item">
 
           <div class="cart-catalog cart-catalog__grid">
-            <img class="cart-catalog__image" src="img/catalog_mobile_3.png" alt="Изображение Cat Energy PRO 500 г">
+
+            <picture>
+              <source media="(min-width:768px)" srcset="img/catalog_tablet_3.png">
+              <img src="img/catalog_mobile_3.png"
+              alt="Изображение Cat Energy PRO 500 г"
+              class="cart-catalog__image">
+            </picture>
+
             <div>
               <h3 class="cart-catalog__title">
                 Cat Energy PRO 500 г
@@ -127,7 +156,14 @@
         <li class="catalog-products__item">
 
           <div class="cart-catalog cart-catalog__grid">
-            <img class="cart-catalog__image" src="img/catalog_mobile_4.png" alt="Изображение Cat Energy PRO 1000 г">
+
+            <picture>
+              <source media="(min-width:768px)" srcset="img/catalog_tablet_4.png">
+              <img src="img/catalog_mobile_4.png"
+              alt="Изображение Cat Energy PRO 1000 г"
+              class="cart-catalog__image">
+            </picture>
+
             <div>
               <h3 class="cart-catalog__title">
                 Cat Energy PRO 1000 г
@@ -154,7 +190,14 @@
         <li class="catalog-products__item">
 
           <div class="cart-catalog cart-catalog__grid">
-            <img class="cart-catalog__image" src="img/catalog_mobile_5.png" alt="Изображение Cat Energy slim 500 г">
+
+            <picture>
+              <source media="(min-width:768px)" srcset="img/catalog_tablet_5.png">
+              <img src="img/catalog_mobile_5.png"
+              alt="Изображение Cat Energy slim 500 г"
+              class="cart-catalog__image">
+            </picture>
+
             <div>
               <h3 class="cart-catalog__title">
                 Cat Energy slim 500 г
@@ -181,7 +224,14 @@
         <li class="catalog-products__item">
 
           <div class="cart-catalog cart-catalog__grid">
-            <img class="cart-catalog__image" src="img/catalog_mobile_6.png" alt="Изображение Cat Energy slim 1000 г">
+
+            <picture>
+              <source media="(min-width:768px)" srcset="img/catalog_tablet_6.png">
+              <img src="img/catalog_mobile_6.png"
+              alt="Изображение Cat Energy slim 1000 г"
+              class="cart-catalog__image">
+            </picture>
+
             <div>
               <h3 class="cart-catalog__title">
                 Cat Energy slim 1000 г
@@ -208,7 +258,14 @@
         <li class="catalog-products__item">
 
           <div class="cart-catalog cart-catalog__grid">
-            <img class="cart-catalog__image" src="img/catalog_mobile_7.png" alt="Изображение Cat Energy slim 500 г">
+
+            <picture>
+              <source media="(min-width:768px)" srcset="img/catalog_tablet_7.png">
+              <img src="img/catalog_mobile_7.png"
+              alt="Изображение Cat Energy slim 500 г"
+              class="cart-catalog__image">
+            </picture>
+
             <div>
               <h3 class="cart-catalog__title">
                 Cat Energy slim 500 г
@@ -235,7 +292,14 @@
         <li class="catalog-products__item">
 
           <div class="cart-catalog cart-catalog--more">
-            <img class="cart-catalog__image cart-catalog__image--more" src="img/plus.svg" width="30px" height="30px" alt="">
+
+            <picture>
+              <source media="(min-width:768px)" srcset="img/plus_tablet.svg">
+              <img src="img/plus.svg"
+              alt="Показать еще"
+              class="cart-catalog__image cart-catalog__image--more">
+            </picture>
+
             <h3 class="cart-catalog__title cart-catalog__title--position">
               Показать еще 100500 товаров
             </h3>
@@ -252,9 +316,13 @@
 
     <section class="additional-goods">
       <h2 class="additional-goods__title">
-        Дополнительные товары
+        <div class="container">
+          <span>
+            Дополнительные товары
+          </span>
+        </div>
       </h2>
-      <div class="additional-goods__grid">
+      <div class="additional-goods__grid container">
         <div class="additional-goods__col">
           <ul class="additional-goods__list-grid">
             <li class="additional-goods__list-col">
@@ -325,10 +393,10 @@
         </div>
         <div class="additional-goods__col">
           <div class="cart-present">
-            <img class="cart-present__image" src="img/icon_gift.svg" width="78px" height="80px" alt="">
+            <img class="cart-present__image" src="img/icon_gift.svg" width="78px" height="80px" alt="Иконка подарка">
             <p class="cart-present__paragrafe">
               Закажите все
-              и получите чехол для
+              и&nbsp;получите чехол для
               кота в подарок!
             </p>
           </div>
@@ -338,49 +406,57 @@
 
     <section class="map map__grid-main">
       <iframe class="map__background" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533293!2d30.320858715925993!3d59.93871648187619!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1605894448396!5m2!1sru!2sru" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-      <div class="map__info">
-        <div class="map__grid">
-          <div class="map__col map__col--1">
-            <h3 class="map__title">
-              приглашаем к сотрудничеству дилеров!
-            </h3>
+
+        <div class="map__info map__info--extra">
+          <div class="container">
+            <div class="map__grid">
+              <div class="map__col map__col--1">
+                <h3 class="map__title">
+                  Приглашаем к&nbsp;сотрудничеству дилеров!
+                </h3>
+              </div>
+              <div class="map__col map__col--2">
+                <p class="map__address">
+                  ул. Большая Конюшенная, д. 19/8 <span>Санкт-Петербург</span>
+                </p>
+              </div>
+            </div>
           </div>
-          <div class="map__col map__col--2">
-            <p class="map__address">
-              ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
-            </p>
-          </div>
-        </div>
+
       </div>
     </section>
 
     <footer class="footer">
-      <div class="footer__grid-main">
+      <div class="footer__grid-main container">
         <div class="footer__col-main">
-          <img class="footer__logo-text" src="img/footer_logo_2.svg">
+          <img
+          class="footer__logo-text"
+          src="img/footer_logo_2.svg" width="128px" height="24px">
         </div>
         <div class="footer__col-main">
           <ul class="footer__list">
             <li class="footer__item">
               <a class="footer__link" href="#">
-                <img class="footer__social" src="img/icon_vkontakte.svg">
+                  <img class="footer__social footer__social--vk" src="img/icon_vkontakte.svg">
               </a>
             </li>
             <li class="footer__item">
               <a class="footer__link" href="#">
-                <img class="footer__social" src="img/icon_instagram.svg">
+                <img class="footer__social footer__social--instagram" src="img/icon_instagram.svg">
               </a>
             </li>
             <li class="footer__item">
               <a class="footer__link" href="#">
-                <img class="footer__social" src="img/icon_facebook.svg">
+                <img class="footer__social footer__social--facebook" src="img/icon_facebook.svg">
               </a>
             </li>
           </ul>
         </div>
         <div class="footer__col-main footer__grid-logo">
-          <span class="footer__copyright">HTML Academy</span>
-          <img class="footer__logo" wight="27px" height="34px" src="img/htmlacademy.svg">
+          <a class="footer__logo-link" href="#">
+            <span class="footer__copyright">HTML Academy</span>
+            <img class="footer__logo" wight="27px" height="34px" src="img/htmlacademy.svg">
+          </a>
         </div>
       </div>
     </footer>
