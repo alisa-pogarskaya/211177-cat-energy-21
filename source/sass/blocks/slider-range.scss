@@ -59,37 +59,77 @@
 
 .slider-range__item--before {
   width: 100%;
-  background: url("../img/before_mobile_1.png") top 0 left 0/279px auto no-repeat;
+  background: url("../img/before_mobile_1x.png") top 0 left 0/279px auto no-repeat;
+}
+
+@media (min-resolution: 2dppx) {
+  .slider-range__item--before {
+    width: 100%;
+    background: url("../img/before_mobile_2x.png") top 0 left 0/279px auto no-repeat;
+  }
 }
 
 @media (min-width: $tablet) {
   .slider-range__item--before {
     width: 50%;
-    background: url("../img/before_mobile_1.png") top 44px left 26px / 597px auto no-repeat, linear-gradient(to top, $color-extra 438px, $white 194px);
+    background: url("../img/before_tablet_1x.png") top 22px left -2px/653px auto no-repeat, linear-gradient(to top, $color-extra 438px, $white 194px);
+  }
+}
+
+@media (min-width: $tablet) and (min-resolution: 2dppx) {
+  .slider-range__item--before {
+    width: 50%;
+    background: url("../img/before_tablet_1x.png") top 22px left -2px/653px auto no-repeat, linear-gradient(to top, $color-extra 438px, $white 194px);
   }
 }
 
 @media (min-width: $desktop) {
   .slider-range__item--before {
-    background: url("../img/before_mobile_1.png") top 17px left 6px / 597px auto no-repeat, linear-gradient(to top, $color-extra 466px, $white 194px);
+    background: url("../img/before_desktop_1x.png") top 0 left 2px/637px auto no-repeat, linear-gradient(to top, $color-extra 459px, $white 194px);
+  }
+}
+
+@media (min-width: $desktop) and (min-resolution: 2dppx) {
+  .slider-range__item--before {
+    background: url("../img/before_desktop_2x.png") top 0 left 2px/637px auto no-repeat, linear-gradient(to top, $color-extra 459px, $white 194px);
   }
 }
 
 .slider-range__item--after {
   display: none;
-  background: url("../img/before_mobile_2.png") top 0 left 0/251px 240px no-repeat;
+  background: url("../img/after_mobile_1x.png") top 0 left 0/251px 240px no-repeat;
+}
+
+@media (min-resolution: 2dppx) {
+  .slider-range__item--after {
+    display: none;
+    background: url("../img/after_mobile_2x.png") top 0 left 0/251px 240px no-repeat;
+  }
 }
 
 @media (min-width: $tablet) {
   .slider-range__item--after {
     display: block;
-    background: url("../img/before_mobile_2.png") top 25px left 80px / 535px auto no-repeat, linear-gradient(to top, $color-extra 438px, $white 194px);
+    background: url("../img/after_tablet_1x.png") top 25px left 2px/645px auto no-repeat, linear-gradient(to top, $color-extra 438px, $white 194px);
+  }
+}
+
+@media (min-width: $tablet) and (min-resolution: 2dppx) {
+  .slider-range__item--after {
+    display: block;
+    background: url("../img/after_tablet_2x.png") top 25px left 2px/645px auto no-repeat, linear-gradient(to top, $color-extra 438px, $white 194px);
   }
 }
 
 @media (min-width: $desktop) {
   .slider-range__item--after {
-    background: url("../img/before_mobile_2.png") top 0 left 56px / 535px auto no-repeat, linear-gradient(to top, $color-achromatic-extra-4 466px, $white 194px);
+    background: url("../img/after_desktop_1x.png") top -3px left 3px/647px auto no-repeat, linear-gradient(to top, $color-achromatic-extra-4 459px, $white 194px);
+  }
+}
+
+@media (min-width: $desktop) and (min-resolution: 2dppx) {
+  .slider-range__item--after {
+    background: url("../img/after_desktop_2x.png") top -3px left 3px/647px auto no-repeat, linear-gradient(to top, $color-achromatic-extra-4 459px, $white 194px);
   }
 }
 
@@ -117,7 +157,7 @@
 
 @media (min-width: $desktop) {
   .slider-range__toggles-wrapper {
-    margin: 0 auto 69px auto;
+    margin: 0 auto 63px auto;
     left: 33px;
   }
 }
