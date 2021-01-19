@@ -16,6 +16,16 @@
   text-decoration: none;
   text-transform: uppercase;
   border: none;
+  transition: all 600ms;
+
+  &:hover {
+    background: #5eaa2f;
+  }
+
+  &:active {
+    color: rgba($color: $white, $alpha: 0.3);
+    background: #5eaa2f;
+  }
 }
 
 @media (min-width: $tablet) {
