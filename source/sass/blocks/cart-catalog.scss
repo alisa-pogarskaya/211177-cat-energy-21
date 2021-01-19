@@ -1,4 +1,5 @@
 .cart-catalog {
+  position: relative;
   height: 100%;
   padding: 19px 0 25px 0;
   font-style: normal;
@@ -11,12 +12,23 @@
 @media (min-width: $tablet) {
   .cart-catalog {
     max-width: inherit;
-    padding: 19px 36px 40px 36px;
+    padding: 141px 36px 40px 36px;
     background-color: $color-achromatic-6;
 
     &--more {
       background: $white;
       border: 1px solid $color-achromatic-6;
+      padding: 19px 36px 40px 36px;
+    }
+  }
+}
+
+@media (min-width: $desktop) {
+  .cart-catalog {
+    padding: 135px 36px 40px 36px;
+
+    &--more {
+      padding: 0 36px 40px 36px;
     }
   }
 }
@@ -72,7 +84,7 @@
     margin: 28px auto 15px auto;
 
     &--position {
-      margin: 28px auto 25px auto;
+      margin: 47px auto 25px auto;
     }
   }
 }
@@ -119,6 +131,23 @@
   }
 }
 
+@media (min-width: $tablet) {
+  .cart-catalog__image-container {
+    position: absolute;
+    top: -73px;
+    display: flex;
+    width: 78%;
+    justify-content: center;
+  }
+}
+
+@media (min-width: $desktop) {
+  .cart-catalog__image-container {
+    top: -80px;
+    width: 73%;
+  }
+}
+
 .cart-catalog__image {
   &--more {
     width: 30px;
@@ -132,7 +161,6 @@
   .cart-catalog__image {
     height: 200px;
     display: block;
-    margin: -90px auto 0 auto;
 
     &--more {
       margin: 35px auto 0 auto;
@@ -144,8 +172,6 @@
 
 @media (min-width: $desktop) {
   .cart-catalog__image {
-    margin: -98px auto 0 auto;
-
     &--more {
       margin: 50px auto 10px auto;
       width: 60px;
@@ -204,9 +230,28 @@
   text-decoration: none;
   text-transform: uppercase;
   border: none;
+  transition: all 600ms;
+
+  &:hover {
+    background: #5eaa2f;
+  }
+
+  &:active {
+    color: rgba($color: $white, $alpha: 0.3);
+    background: #5eaa2f;
+  }
 
   &--more {
     background: $color-achromatic-6;
     color: $color-achromatic-2;
+
+    &:hover {
+      background: $color-achromatic-5;
+    }
+
+    &:active {
+      color: rgba($color: $color-achromatic-2, $alpha: 0.3);
+      background: $color-achromatic-5;
+    }
   }
 }
