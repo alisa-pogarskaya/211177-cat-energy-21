@@ -31,6 +31,15 @@
 .footer__logo-text {
   display: block;
   margin: 0 auto 30px auto;
+  transition: all 600ms;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 }
 
 @media (min-width: $tablet) {

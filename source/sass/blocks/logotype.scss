@@ -1,6 +1,25 @@
 .logotype {
+  transition: all 600ms;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+
   &--text {
     margin-left: -20px;
+    transition: all 600ms;
+
+    &:hover {
+      opacity: 0.8;
+    }
+
+    &:active {
+      opacity: 0.6;
+    }
   }
 }
 

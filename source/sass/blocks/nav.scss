@@ -72,6 +72,15 @@
   vertical-align: middle;
   text-decoration: none;
   text-transform: uppercase;
+  transition: all 600ms;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 
   &--extra {
     color: $black;
