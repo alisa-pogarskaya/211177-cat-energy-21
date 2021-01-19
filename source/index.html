@@ -5,6 +5,15 @@
     <title>HTML Academy: Кэт энерджи</title>
     <link rel="stylesheet" href="css/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="img/favicon/site.webmanifest">
+    <link rel="shortcut icon" href="img/favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-config" content="img/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
   </head>
   <body>
 
@@ -60,9 +69,13 @@
             <div class="main-screen__col">
 
               <picture>
-                <source media="(min-width:1440px)" srcset="img/index_can_desktop_1.png">
-                <source media="(min-width:768px)" srcset="img/index_can_tablet_1.png">
-                <img src="img/index_can_mobile_1.png"
+                <source media="(min-width:1440px)"
+                        srcset="img/index_can_desktop_1.png,
+                        img/index_can_desktop_1_2x.png 2x">
+                <source media="(min-width:768px)"
+                        srcset="img/index_can_tablet_1.png,
+                        img/index_can_tablet_1_2x.png 2x">
+                <img src="img/index_can_mobile_1.png" srcset="img/index_can_mobile_1_2x.png 2x"
                 alt="Банка с питанием для кота"
                 class="main-screen__image main-screen__col--4">
               </picture>

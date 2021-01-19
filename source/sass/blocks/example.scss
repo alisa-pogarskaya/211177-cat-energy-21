@@ -49,7 +49,7 @@
 @media (min-width: $desktop) {
   .example__col-main {
     &--1 {
-      padding: 0 0 75px 0;
+      padding: 0 0 68px 0;
     }
   }
 }
@@ -99,6 +99,7 @@
 @media (min-width: $desktop) {
   .example__paragrafe {
     margin: 0 0 68px 0;
+    font-size: 14px;
   }
 }
 

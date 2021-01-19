@@ -24,13 +24,13 @@
 .cart-catalog__grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-gap: 12px 0;
 }
 
 @media (min-width: $tablet) {
   .cart-catalog__grid {
     display: flex;
     flex-direction: column;
+    grid-gap: 12px 0;
   }
 }
 
