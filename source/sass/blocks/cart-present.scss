@@ -4,6 +4,14 @@
   background: url("../img/gift_photo_mobile.jpg") no-repeat center center;
 }
 
+@media (min-resolution: 2dppx) {
+  .cart-present {
+    width: 100%;
+    height: 289px;
+    background: url("../img/gift_photo_mobile_2x.jpg") no-repeat center center;
+  }
+}
+
 @media (min-width: $tablet) {
   .cart-present {
     height: 100%;
@@ -17,12 +25,34 @@
   }
 }
 
+@media (min-width: $tablet) and (min-resolution: 2dppx) {
+  .cart-present {
+    height: 100%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 57px 124px 60px 78px;
+    background: url("../img/gift_photo_tablet_2x.jpg") no-repeat center center;
+    background-size: cover;
+  }
+}
+
 @media (min-width: $desktop) {
   .cart-present {
     display: block;
     height: 289px;
     padding: 0;
     background: url("../img/gift_photo_desktop.jpg") no-repeat center center;
+  }
+}
+
+@media (min-width: $desktop) and (min-resolution: 2dppx) {
+  .cart-present {
+    display: block;
+    height: 289px;
+    padding: 0;
+    background: url("../img/gift_photo_desktop_2x.jpg") no-repeat center center;
   }
 }
 
