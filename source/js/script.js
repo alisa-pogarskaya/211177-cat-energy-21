@@ -19,10 +19,10 @@ function initMap() {
 
   // Marker - style
 
-	var markerContacts = new google.maps.Marker({
-		position: {lat: 59.938764851017694, lng: 30.32305812734798},
-		map: map,
-		title: "Пункт",
-		icon: "../img/map-pin.svg"
-	});
+  var markerContacts = new google.maps.Marker({
+    position: {lat: 59.938764851017694, lng: 30.32305812734798},
+    map: map,
+    title: "Пункт",
+    icon: "../img/map-pin.svg"
+  });
 }
