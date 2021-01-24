@@ -85,13 +85,13 @@
 
 @media (min-width: $desktop) {
   .slider-range__item--before {
-    background: url("../img/before_desktop_1x.png") top 0 left 2px/637px auto no-repeat, linear-gradient(to top, $color-extra 459px, $white 194px);
+    background: url("../img/before_desktop_1x.png") top 0 left 7px/637px auto no-repeat, linear-gradient(to top, $color-extra 459px, $white 194px);
   }
 }
 
 @media (min-width: $desktop) and (min-resolution: 2dppx) {
   .slider-range__item--before {
-    background: url("../img/before_desktop_2x.png") top 0 left 2px/637px auto no-repeat, linear-gradient(to top, $color-extra 459px, $white 194px);
+    background: url("../img/before_desktop_2x.png") top 0 left 7px/637px auto no-repeat, linear-gradient(to top, $color-extra 459px, $white 194px);
   }
 }
 
