@@ -33,6 +33,22 @@ const styles = () => {
 
 exports.styles = styles;
 
+const stylesСss = () => {
+  return gulp.src("source/sass/style.scss")
+    .pipe(plumber())  // Находит ошибки
+    .pipe(sourcemap.init()) // Записывает состояние sass файла
+    .pipe(sass()) // sass превращается в css
+    .pipe(postcss([ // postcss вмещает в себя подплагины
+      autoprefixer(), // в css появились префиксы
+    ]))
+    .pipe(sourcemap.write("."))
+    .pipe(rename("style.css")) // меняем название файла
+    .pipe(gulp.dest("build/css"))
+    .pipe(sync.stream());
+}
+
+exports.stylesСss = stylesСss;
+
 // HTML
 
 const html = () => {
@@ -45,7 +61,7 @@ const html = () => {
 
 const scripts = () => {
   return gulp.src("source/js/script.js")
-//    .pipe(uglify())   Как решить проблему с uglify? Не запускается с этой строки.
+    //.pipe(uglify())
     .pipe(rename("script.min.js"))
     .pipe(gulp.dest("build/js"))
     .pipe(sync.stream())
@@ -130,8 +146,8 @@ exports.server = server;
 
 const watcher = () => {
   gulp.watch("source/sass/**/*.scss", gulp.series("styles"));
-  //gulp.watch("source/*.html").on("change", sync.reload);
-  gulp.watch("source/*.html", gulp.series(html, sync.reload));
+  gulp.watch("source/js/**/*.js", gulp.series("scripts"));
+  gulp.watch("source/*.html", gulp.series(html)).on("change", sync.reload);
 }
 
 // Build
@@ -140,7 +156,9 @@ const build = gulp.series(
   clean,
   gulp.parallel(
     styles,
+    stylesСss,
     html,
+    scripts,
     sprite,
     copy,
     images,
@@ -154,7 +172,9 @@ exports.default = gulp.series(
   clean,
   gulp.parallel(
     styles,
+    stylesСss,
     html,
+    scripts,
     sprite,
     copy,
     createWebp
