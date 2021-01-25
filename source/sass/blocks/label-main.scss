@@ -1,3 +1,5 @@
+/* begin label-main */
+
 .label-main {
   font-style: normal;
   font-weight: 400;
@@ -64,7 +66,7 @@
 
 @media (min-width: $tablet) {
   .label-main__item {
-    margin: 0 0 16px 0;
+    margin: 0 0 20px 0;
     list-style: none;
 
     &:last-child {
@@ -119,8 +121,9 @@
   min-height: 45px;
   width: 100%;
   padding: 11px 15px 13px 15px;
-  border: 1px solid $color-achromatic-extra-2;
   box-sizing: border-box;
+  outline: 1px solid $color-achromatic-extra-2;
+  outline-offset: -1px;
   font-family: $font-main-regular;
   font-size: 16px;
   font-style: normal;
@@ -130,6 +133,7 @@
   text-align: left;
   text-transform: uppercase;
   color: $color-achromatic-2;
+  transition: all 600ms;
 
   &--mail-icon {
     position: absolute;
@@ -146,11 +150,45 @@
     top: 13px;
     right: 13px;
   }
+
+  &:disabled {
+    outline: 2px solid $color-achromatic-2;
+  }
+
+  &:disabled + &--mail-icon path {
+    fill: $color-main;
+  }
+
+  &:disabled + &--phone-icon path {
+    fill: $color-main;
+  }
+
+  &:hover {
+    outline: 1px solid $color-achromatic-4;
+    transition: all 600ms;
+  }
+
+  &:focus {
+    outline: 2px solid $color-achromatic-2;
+    transition: all 600ms;
+  }
+
+  &:required:invalid {
+    outline: 2px solid $error;
+  }
+
+  &:required:invalid + &--mail-icon path {
+    fill: $error;
+  }
+
+  &:required:invalid + &--phone-icon path {
+    fill: $error;
+  }
 }
 
 @media (min-width: $tablet) {
   .label-main__input {
-    min-height: 53px;
+    height: 52px;
     padding: 10px 15px 13px 16px;
     font-size: 20px;
     line-height: 30px;
@@ -166,3 +204,5 @@
     }
   }
 }
+
+/* end label-main */

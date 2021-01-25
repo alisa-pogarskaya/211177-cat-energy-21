@@ -32,21 +32,25 @@ $desktop: 1440px;
 }
 
 @media (min-width: $mobile) {
-  br {
+  .br {
     display: none;
   }
 }
 
 @media (min-width: $tablet) {
-  br {
+  .br {
     display: none;
   }
+}
+
+.a {
+  text-decoration: none;
 }
 
 // Colors
 
 $color-main: #68b738;
-$color-main-2: #68b738;
+$color-main-2: #5eaa2f;
 $color-extra: #f2f2f2;
 $color-error: #ff8282;
 
@@ -65,3 +69,5 @@ $color-achromatic-extra-5: #dcdcdc;
 
 $white: #ffffff;
 $black: #000000;
+
+$error: #ff8282;

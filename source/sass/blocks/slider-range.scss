@@ -1,4 +1,4 @@
-/* slider-range */
+/* begin slider-range */
 
 .slider-range {
   position: relative;
@@ -207,6 +207,15 @@
     border-radius: 50%;
     border: 1px solid $color-achromatic-4;
     filter: drop-shadow(0 1px 3px rgba(0, 0, 0, 0.16));
+    transition: all 600ms;
+
+    &:hover {
+      filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.16));
+    }
+
+    &:active {
+      border: 1px solid $color-main;
+    }
   }
 }
 
@@ -221,6 +230,15 @@
     border-radius: 50%;
     border: 1px solid $color-achromatic-4;
     filter: drop-shadow(0 1px 3px rgba(0, 0, 0, 0.16));
+    transition: all 600ms;
+
+    &:hover {
+      filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.16));
+    }
+
+    &:active {
+      border: 1px solid $color-main;
+    }
   }
 }
 
@@ -245,16 +263,19 @@
 
 @media (min-width: $tablet) {
   .slider-range__title {
-    font-size: 16px;
-    line-height: 20px;
-  }
-}
-
-@media (min-width: $tablet) {
-  .slider-range__title {
     padding: 0 0 5px 0;
     font-size: 20px;
+    line-height: 20px;
     border-bottom: 1px dotted rgba($color: #000000, $alpha: 0.24);
+    transition: all 600ms;
+
+    &:hover {
+      border-bottom: 1px solid rgba($color: #000000, $alpha: 0.4);
+    }
+
+    &:active {
+      border-bottom: 1px solid rgba($color: #000000, $alpha: 0);
+    }
   }
 }
 
@@ -297,3 +318,5 @@
     display: none;
   }
 }
+
+/* end slider-range */

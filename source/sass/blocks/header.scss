@@ -1,8 +1,13 @@
-// BEGIN HEADER
+/* begin header */
+
 .header {
   width: auto;
-  padding: 12px 0 0 0;
+  padding: 12px 0 12px;
   background: none;
+
+  &--open {
+    padding: 12px 0 0;
+  }
 }
 
 @media (min-width: $tablet) {
@@ -62,4 +67,10 @@
     justify-content: flex-start;
   }
 }
-// END HEADER
+
+.header__link {
+  display: flex;
+  align-items: center;
+}
+
+/* end header */

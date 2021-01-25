@@ -1,3 +1,5 @@
+/* begin map */
+
 .map {
   position: relative;
 }
@@ -9,7 +11,7 @@
 
 @media (min-width: $desktop) {
   .map__grid-main {
-    margin-top: 95px;
+    margin-top: 93px;
   }
 }
 
@@ -71,7 +73,7 @@
     grid-template-columns: 1fr 154px;
     grid-gap: 0;
     margin: 0;
-    padding: 63px 90px 56px 75px;
+    padding: 65px 90px 56px 75px;
     background-color: $white;
   }
 }
@@ -82,7 +84,7 @@
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
-  line-height: 18px;
+  line-height: 19px;
   letter-spacing: 0;
   text-align: left;
   text-transform: uppercase;
@@ -132,3 +134,5 @@
     text-align: left;
   }
 }
+
+/* end map */
