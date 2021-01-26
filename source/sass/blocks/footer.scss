@@ -1,3 +1,5 @@
+/* begin footer */
+
 .footer {
   padding: 38px 0 22px 0;
   background: $color-achromatic-6;
@@ -11,7 +13,7 @@
 
 @media (min-width: $desktop) {
   .footer {
-    padding: 57px 0 57px 0;
+    padding: 60px 0 60px 0;
   }
 }
 
@@ -78,6 +80,14 @@
   }
 }
 
+.footer__social {
+  transition: all ease 600ms;
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
 @media (min-width: $tablet) {
   .footer__social {
     &--vk {
@@ -92,6 +102,7 @@
     }
 
     &--facebook {
+      margin-left: -5px;
       width: 40px;
       height: 30px;
     }
@@ -100,6 +111,15 @@
 
 @media (min-width: $desktop) {
   .footer__social {
+    & path {
+      transition: all ease 600ms;
+    }
+
+    &:hover path {
+      transition: all ease 600ms;
+      fill: $color-main;
+    }
+
     &--instagram {
       margin: 0 -10px 0 0;
     }
@@ -123,6 +143,11 @@
   width: 100%;
   color: $color-achromatic-2;
   text-decoration: none;
+  transition: all ease 600ms;
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: $tablet) {
@@ -132,6 +157,19 @@
     flex-direction: row;
     align-items: center;
     justify-content: end;
+  }
+}
+
+@media (min-width: $desktop) {
+  .footer__logo-link {
+    & path {
+      transition: all ease 600ms;
+    }
+
+    &:hover path {
+      transition: all ease 600ms;
+      fill: $color-main;
+    }
   }
 }
 
@@ -156,3 +194,5 @@
 .footer__logo {
   float: right;
 }
+
+/* end footer */

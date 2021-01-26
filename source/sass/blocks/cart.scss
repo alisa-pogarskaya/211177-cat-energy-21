@@ -1,3 +1,5 @@
+/* begin cart */
+
 .cart {
   padding: 30px 20px 18px 20px;
   background: $color-achromatic-6;
@@ -136,6 +138,18 @@
     margin: 0 0 0 15px;
     width: 32px;
     height: 11px;
+    transition: all 600ms;
+  }
+
+  &:hover::after {
+    content: url("../img/arrow_right_big.svg");
+    transition: all 600ms;
+  }
+
+  &:active::after {
+    content: url("../img/arrow_right_big.svg");
+    opacity: 0.3;
+    transition: all 600ms;
   }
 }
 
@@ -155,3 +169,5 @@
     }
   }
 }
+
+/* end cart */

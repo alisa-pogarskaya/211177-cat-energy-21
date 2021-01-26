@@ -1,13 +1,28 @@
+/* begin nav */
+
 .nav {
   margin: 0;
   padding: 0;
   list-style: none;
+  display: none;
+
+  &--open {
+    margin: 10px 0 0 0;
+    display: block;
+    transition: top all 600ms;
+  }
+}
+
+@media (min-width: $tablet) {
+  .nav {
+    display: block;
+  }
 }
 
 .nav__list {
   list-style: none;
   padding: 0;
-  margin: 10px 0 0 0;
+  margin: 0;
   border-bottom: 1px solid $color-achromatic-extra-3;
 }
 
@@ -24,10 +39,6 @@
 .nav__item {
   padding: 22px 0 23px 0;
   border-top: 1px solid $color-achromatic-extra-3;
-
-  &--active-extra {
-    border-bottom: 2px solid $color-main;
-  }
 }
 
 @media (min-width: $tablet) {
@@ -106,3 +117,5 @@
     }
   }
 }
+
+/* end nav */

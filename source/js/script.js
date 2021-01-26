@@ -26,3 +26,11 @@ function initMap() {
     icon: "../img/map-pin.svg"
   });
 }
+
+// Menu mobile
+
+document.querySelector('.burger').addEventListener('click', function(){
+  document.querySelector('.burger span').classList.toggle('active');
+  document.querySelector('.nav').classList.toggle("nav--open");
+  document.querySelector('.header').classList.toggle("header--open");
+})

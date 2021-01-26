@@ -1,3 +1,5 @@
+/* begin checkbox-main */
+
 .checkbox-main {
   padding: 0 0 22px 0;
 }
@@ -52,6 +54,13 @@
   letter-spacing: 0;
   text-align: left;
   text-transform: uppercase;
+
+  & input {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+    margin: 10px 0 0 20px;
+  }
 }
 
 @media (min-width: $tablet) {
@@ -61,11 +70,12 @@
   }
 }
 
-.checkbox-main__caption input {
-  position: absolute;
-  z-index: -1;
-  opacity: 0;
-  margin: 10px 0 0 20px;
+.checkbox-main__input:disabled + .checkbox-main__text {
+  opacity: 0.3;
+}
+
+.checkbox-main__input:disabled + .checkbox-main__text:hover::before {
+  border: 1px solid $color-achromatic-4;
 }
 
 .checkbox-main__text {
@@ -111,6 +121,13 @@
   }
 }
 
+@media (min-width: $desktop) {
+  .checkbox-main__text:hover::before {
+    border: 1px solid #bababa;
+    transition: all 600ms;
+  }
+}
+
 .checkbox-main__text::after {
   content: "";
   position: absolute;
@@ -133,3 +150,5 @@
 .checkbox-main__caption input:checked + .checkbox-main__text::after {
   background: url("../img/checkbox_active.svg") no-repeat top 7px left 5px;
 }
+
+/* end checkbox-main */

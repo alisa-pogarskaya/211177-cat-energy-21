@@ -1,3 +1,5 @@
+/* begin radio-main */
+
 .radio-main {
   padding: 10px 20px 0 0;
 }
@@ -48,11 +50,21 @@
   }
 }
 
-.radio-main__caption input {
-  position: absolute;
-  z-index: -1;
-  opacity: 0;
-  margin: 10px 0 0 7px;
+.radio-main__caption {
+  & input {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+    margin: 10px 0 0 7px;
+  }
+}
+
+.radio-main__input:disabled + .radio-main__text {
+  opacity: 0.3;
+}
+
+.radio-main__input:disabled + .radio-main__text:hover::before {
+  border: 1px solid $color-achromatic-4;
 }
 
 .radio-main__text {
@@ -78,6 +90,12 @@
   }
 }
 
+@media (min-width: $desktop) {
+  .radio-main__text {
+    transition: all 600ms;
+  }
+}
+
 .radio-main__text::before {
   content: "";
   position: absolute;
@@ -96,6 +114,13 @@
     left: 5px;
     width: 40px;
     height: 40px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .radio-main__text:hover::before {
+    border: 1px solid #bababa;
+    transition: all 600ms;
   }
 }
 
@@ -124,3 +149,5 @@
 .radio-main__caption input:checked + .radio-main__text::after {
   opacity: 1;
 }
+
+/* end radio-main */

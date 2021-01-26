@@ -1,3 +1,5 @@
+/* begin additional-goods */
+
 .additional-goods {
   padding: 0 0 35px 0;
   font-style: normal;
@@ -19,11 +21,13 @@
 .additional-goods__title {
   position: relative;
   margin: 27px 0 0 0;
-  padding: 0 0 26px 0;
+  padding: 0 0 27px 0;
 
   & span {
     display: inline;
     height: 26px;
+    padding: 0 21px 0 19px;
+    margin: 0 0 0 -20px;
     font-family: $font-main-regular;
     font-size: 24px;
     line-height: 24px;
@@ -144,7 +148,7 @@
 
 @media (min-width: $desktop) {
   .additional-goods__list {
-    grid-template-columns: 1fr 132px 114px 244px;
+    grid-template-columns: 1fr 202px 44px 244px;
     grid-gap: 41px;
     padding: 0;
   }
@@ -220,6 +224,7 @@
 @media (min-width: $desktop) {
   .additional-goods__item {
     padding: 17px 0 16px 0;
+    text-align: left;
 
     &--1 {
       grid-column: 1/2;
@@ -261,12 +266,12 @@
   transition: all 600ms;
 
   &:hover {
-    background: #5eaa2f;
+    background: $color-main-2;
   }
 
   &:active {
     color: rgba($color: $white, $alpha: 0.3);
-    background: #5eaa2f;
+    background: $color-main-2;
   }
 }
 
@@ -281,3 +286,5 @@
     margin: 0;
   }
 }
+
+/* end additional-goods */

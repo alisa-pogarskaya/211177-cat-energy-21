@@ -1,3 +1,5 @@
+/* begin logotype */
+
 .logotype {
   transition: all 600ms;
 
@@ -10,7 +12,7 @@
   }
 
   &--text {
-    margin-left: -20px;
+    margin-left: -9px;
     transition: all 600ms;
 
     &:hover {
@@ -40,3 +42,5 @@
     }
   }
 }
+
+/* end logotype */
