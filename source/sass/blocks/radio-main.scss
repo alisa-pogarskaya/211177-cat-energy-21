@@ -50,21 +50,24 @@
   }
 }
 
-.radio-main__caption {
-  & input {
-    position: absolute;
-    z-index: -1;
-    opacity: 0;
-    margin: 10px 0 0 7px;
+.radio-main__input {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+  margin: 10px 0 0 7px;
+
+  &:disabled + .radio-main__text {
+    opacity: 0.3;
   }
-}
 
-.radio-main__input:disabled + .radio-main__text {
-  opacity: 0.3;
-}
+  &:disabled + .radio-main__text:hover::before {
+    border: 1px solid $color-achromatic-4;
+  }
 
-.radio-main__input:disabled + .radio-main__text:hover::before {
-  border: 1px solid $color-achromatic-4;
+  &:focus + .radio-main__text::before {
+    border: 1px solid $color-achromatic-2;
+    box-shadow: 0 0 0 1px $color-achromatic-2 inset;
+  }
 }
 
 .radio-main__text {
