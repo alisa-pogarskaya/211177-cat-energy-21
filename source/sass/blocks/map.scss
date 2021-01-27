@@ -18,11 +18,38 @@
 .map__background {
   height: 362px;
   order: 2;
+  background: $color-achromatic-4 url("../img/map_mobile.jpg") center center no-repeat;
+}
+
+@media (min-resolution: 2dppx) {
+  .map__background {
+    background: $color-achromatic-4 url("../img/map_mobile_2x.jpg") center center no-repeat;
+  }
 }
 
 @media (min-width: $tablet) {
   .map__background {
     height: 400px;
+    background: $color-achromatic-4 url("../img/map_tablet.jpg") center center no-repeat;
+  }
+}
+
+@media (min-width: $tablet) and (min-resolution: 2dppx) {
+  .map__background {
+    height: 400px;
+    background: $color-achromatic-4 url("../img/map_tablet_2x.jpg") center center no-repeat;
+  }
+}
+
+@media (min-width: $desktop) {
+  .map__background {
+    background: $color-achromatic-4 url("../img/map_desktop.jpg") center center no-repeat;
+  }
+}
+
+@media (min-width: $tablet) and (min-resolution: 2dppx) {
+  .map__background {
+    background: $color-achromatic-4 url("../img/map_desktop_2x.jpg") center center no-repeat;
   }
 }
 

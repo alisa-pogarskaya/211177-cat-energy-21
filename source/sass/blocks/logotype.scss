@@ -10,36 +10,17 @@
   &:active {
     opacity: 0.6;
   }
-
-  &--text {
-    margin-left: -9px;
-    transition: all 600ms;
-
-    &:hover {
-      opacity: 0.8;
-    }
-
-    &:active {
-      opacity: 0.6;
-    }
-  }
 }
 
 @media (min-width: $tablet) {
   .logotype {
-    margin: 0 12px 0 0;
-
-    &--text {
-      margin-left: 0;
-    }
+    margin: 2px 12px 0 0;
   }
 }
 
 @media (min-width: $desktop) {
   .logotype {
-    &--text {
-      width: 120px;
-    }
+    margin: 0 12px 0 0;
   }
 }
 

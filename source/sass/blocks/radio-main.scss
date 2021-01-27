@@ -22,18 +22,6 @@
   }
 }
 
-.radio-main__border {
-  border-top: 1px solid $color-achromatic-extra-1;
-  border-bottom: 1px solid $color-achromatic-extra-1;
-}
-
-@media (min-width: $tablet) {
-  .radio-main__border {
-    border-top: none;
-    border-bottom: none;
-  }
-}
-
 .radio-main__item {
   height: 30px;
   margin: 0 0 14px 0;

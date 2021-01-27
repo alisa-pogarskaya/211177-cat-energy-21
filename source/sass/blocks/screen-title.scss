@@ -29,9 +29,13 @@
 
 @media (min-width: $tablet) {
   .screen-title__h1 {
-    margin: 0 0 54px 40px;
+    margin: 0 0 54px 0;
     font-size: 60px;
     line-height: 60px;
+
+    &--extra {
+      margin: 0 0 54px 40px;
+    }
   }
 }
 

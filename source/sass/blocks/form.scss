@@ -10,6 +10,18 @@
   }
 }
 
+.form__border {
+  border-top: 1px solid $color-achromatic-extra-1;
+  border-bottom: 1px solid $color-achromatic-extra-1;
+}
+
+@media (min-width: $tablet) {
+  .form__border {
+    border-top: none;
+    border-bottom: none;
+  }
+}
+
 .form__grid {
   padding: 0;
 }
@@ -38,6 +50,7 @@
 
 .form__title {
   position: relative;
+  display: block;
   margin: 27px 0 0 0;
   padding: 0 0 22px 0;
 
@@ -103,7 +116,7 @@
 
 @media (min-width: $desktop) {
   .form__title {
-    padding: 0 0 70px 0;
+    padding: 0 0 69px 0;
 
     &::after {
       content: "";
@@ -115,6 +128,10 @@
       padding: 0 42px 0 39px;
     }
   }
+}
+
+.form__title-cont {
+  margin: 0;
 }
 
 /* end form */

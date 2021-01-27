@@ -93,15 +93,56 @@
     background: url("../img/special_image_4.svg") no-repeat left top;
   }
 
-  &--number1,
-  &--number2,
-  &--number3,
-  &--number4 {
-    display: none;
-  }
-
   &:last-child {
     margin: 0;
+  }
+}
+
+.principle-operation__number1,
+.principle-operation__number2,
+.principle-operation__number3,
+.principle-operation__number4 {
+  display: none;
+}
+
+@media (min-width: $tablet) {
+  .principle-operation__number1,
+  .principle-operation__number2,
+  .principle-operation__number3,
+  .principle-operation__number4 {
+    z-index: -1;
+    display: inline-block;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    font-family: $font-main-regular;
+    font-size: 280px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 280px;
+    letter-spacing: 0;
+    text-align: right;
+    color: $color-extra;
+  }
+
+  .principle-operation__number1 {
+    top: -40px;
+    right: 127px;
+  }
+
+  .principle-operation__number2 {
+    top: -40px;
+    right: 133px;
+  }
+
+  .principle-operation__number3 {
+    top: -40px;
+    right: 132px;
+  }
+
+  .principle-operation__number4 {
+    top: -40px;
+    right: 130px;
   }
 }
 
@@ -111,7 +152,7 @@
     z-index: 1;
     max-width: 250px;
     margin: 0;
-    padding: 111px 0 30px 0;
+    padding: 112px 0 30px;
     font-size: 16px;
     line-height: 24px;
     letter-spacing: 0;
@@ -130,45 +171,6 @@
 
     &--image4 {
       background: url("../img/special_image_tablet_4.svg") no-repeat left top;
-    }
-
-    &--number1,
-    &--number2,
-    &--number3,
-    &--number4 {
-      z-index: -1;
-      display: inline-block;
-      position: absolute;
-      width: 1px;
-      height: 1px;
-      font-family: $font-main-regular;
-      font-size: 280px;
-      font-style: normal;
-      font-weight: 400;
-      line-height: 280px;
-      letter-spacing: 0;
-      text-align: right;
-      color: $color-extra;
-    }
-
-    &--number1 {
-      top: -40px;
-      right: 127px;
-    }
-
-    &--number2 {
-      top: -40px;
-      right: 133px;
-    }
-
-    &--number3 {
-      top: -40px;
-      right: 132px;
-    }
-
-    &--number4 {
-      top: -40px;
-      right: 130px;
     }
   }
 }

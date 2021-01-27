@@ -1,20 +1,14 @@
 /* begin nav */
 
 .nav {
-  margin: 0;
+  margin: 10px 0 0 0;
   padding: 0;
   list-style: none;
-  display: none;
-
-  &--open {
-    margin: 10px 0 0 0;
-    display: block;
-    transition: top all 600ms;
-  }
 }
 
 @media (min-width: $tablet) {
   .nav {
+    margin: 0;
     display: block;
   }
 }

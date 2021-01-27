@@ -11,6 +11,7 @@
 
 @media (min-width: $tablet) {
   .label-main__container-1 {
+    margin-top: 12px;
     margin-bottom: 0;
     padding-right: 37px;
     padding-left: 41px;
@@ -22,7 +23,7 @@
   .label-main__container-1 {
     padding-right: 0;
     padding-left: 0;
-    padding-bottom: 41px;
+    padding-bottom: 44px;
   }
 }
 
@@ -74,7 +75,7 @@
     }
 
     &--extra-padding {
-      padding-bottom: 18px;
+      padding-bottom: 23px;
     }
   }
 }
@@ -95,15 +96,11 @@
     padding: 0 13px 0 0;
     text-transform: uppercase;
   }
+}
 
-  &--1 {
-    padding: 0 15px 0 0;
-  }
-
-  &--2 {
-    margin: -2px 0 0 -3px;
-    padding: 0 13px 0 0;
-  }
+.label-main__caption2 {
+  margin: -2px 0 0 -3px;
+  padding: 0 13px 0 0;
 }
 
 @media (min-width: $tablet) {
@@ -134,32 +131,22 @@
   text-transform: uppercase;
   color: $color-achromatic-2;
   transition: all 600ms;
+  appearance: textfield;
 
-  &--mail-icon {
-    position: absolute;
-    width: 20px;
-    height: 14px;
-    top: 16px;
-    right: 15px;
-  }
-
-  &--phone-icon {
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    top: 13px;
-    right: 13px;
+  &::-webkit-inner-spin-button {
+    appearance: none;
+    margin: 0;
   }
 
   &:disabled {
     outline: 2px solid $color-achromatic-2;
   }
 
-  &:disabled + &--mail-icon path {
+  &:disabled + .label-main__mail-icon path {
     fill: $color-main;
   }
 
-  &:disabled + &--phone-icon path {
+  &:disabled + .label-main__phone-icon path {
     fill: $color-main;
   }
 
@@ -177,11 +164,11 @@
     outline: 2px solid $error;
   }
 
-  &:required:invalid + &--mail-icon path {
+  &:required:invalid + .label-main__mail-icon path {
     fill: $error;
   }
 
-  &:required:invalid + &--phone-icon path {
+  &:required:invalid + .label-main__phone-icon path {
     fill: $error;
   }
 }
@@ -192,16 +179,36 @@
     padding: 10px 15px 13px 16px;
     font-size: 20px;
     line-height: 30px;
+  }
+}
 
-    &--mail-icon {
-      top: 18px;
-      right: 15px;
-    }
+.label-main__mail-icon {
+  position: absolute;
+  width: 20px;
+  height: 14px;
+  top: 16px;
+  right: 15px;
+}
 
-    &--phone-icon {
-      top: 16px;
-      right: 16px;
-    }
+@media (min-width: $tablet) {
+  .label-main__mail-icon {
+    top: 18px;
+    right: 15px;
+  }
+}
+
+.label-main__phone-icon {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 13px;
+  right: 13px;
+}
+
+@media (min-width: $tablet) {
+  .label-main__phone-icon {
+    top: 16px;
+    right: 16px;
   }
 }
 

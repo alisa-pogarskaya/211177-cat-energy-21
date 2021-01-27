@@ -1,6 +1,29 @@
 /* begin submit */
 
 .submit {
+  margin-bottom: 32px;
+}
+
+@media (min-width: $tablet) {
+  .submit {
+    display: grid;
+    grid-template-columns: 282px 1fr;
+    grid-gap: 60px;
+    margin-bottom: 72px;
+    margin-left: 41px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .submit {
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 80px;
+    margin-bottom: 82px;
+    margin-left: 0;
+  }
+}
+
+.submit__button {
   display: inline-block;
   width: 100%;
   margin: 0 0 21px 0;
@@ -31,34 +54,11 @@
 }
 
 @media (min-width: $tablet) {
-  .submit {
+  .submit__button {
     margin: 0;
     padding: 14px 0 14px 0;
     font-size: 20px;
     line-height: 24px;
-  }
-}
-
-.submit__grid {
-  margin-bottom: 32px;
-}
-
-@media (min-width: $tablet) {
-  .submit__grid {
-    display: grid;
-    grid-template-columns: 282px 1fr;
-    grid-gap: 60px;
-    margin-bottom: 72px;
-    margin-left: 41px;
-  }
-}
-
-@media (min-width: $desktop) {
-  .submit__grid {
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 80px;
-    margin-bottom: 82px;
-    margin-left: 0;
   }
 }
 

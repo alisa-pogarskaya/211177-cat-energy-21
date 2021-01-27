@@ -2,12 +2,8 @@
 
 .header {
   width: auto;
-  padding: 12px 0 12px;
+  padding: 12px 0 0 0;
   background: none;
-
-  &--open {
-    padding: 12px 0 0;
-  }
 }
 
 @media (min-width: $tablet) {
@@ -56,15 +52,16 @@
 }
 
 .header__grid-logotype {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr 102px 1fr;
   align-items: center;
 }
 
 @media (min-width: $tablet) {
   .header__grid-logotype {
-    margin: 0;
+    display: flex;
     justify-content: flex-start;
+    margin: 0;
   }
 }
 
